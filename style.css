@@ -1,0 +1,69 @@
+body
+{
+    background-color:rgb(247, 243, 239);
+}
+
+
+/* Navigation*/
+
+.menu
+{
+    display: flex;
+    position: relative;
+    padding-right: 0%;
+}
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+    padding-right: 50%;
+}
+
+nav li
+{
+    margin-right: 15px;
+    margin: 10px;
+}
+
+nav a
+{
+    font-size: 1.3em;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color: #0d0aa0;
+    border-bottom: 3px solid #760001;
+}
+
+
+/*barre de recherche*/
+
+#site-search 
+{
+    border-radius: 50px;
+    padding: 15px;
+    outline: none;
+    padding-left: 60px;
+    margin-bottom: 1%;
+    color: #0d0aa0;
+    text-size-adjust: 1em;
+    
+}
+
+.icone
+{
+    position: relative;
+    left: 32px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.research
+{
+    position: relative;
+    padding-bottom: 0%;
+}
