@@ -1,18 +1,29 @@
+*
+{
+    margin: 0;
+    padding: 0;  
+    font-family: 'Raleway', sans-serif;
+}
+
 body
 {
     color: #f2f2f2;
 }
 
-h2
+h1, h2, h3
 {
     color: black;
-    margin-left: 1%;
+    margin-left: 30px;
 }
 
 p
 {
     color: black;
-    margin-left: 1%;
+    margin-left: 30px;
+    font-size: 1em;
+    line-height: 10px;
+    margin-top: 10px;
+
 }
 
 
@@ -22,7 +33,7 @@ p
 {
     display: grid;
     position: relative;
-    justify-content: end;
+    justify-content: flex-end;
     color: #0065FC;
 }
 nav ul
@@ -55,30 +66,46 @@ nav a:hover
 
 /*barre de recherche*/
 
-#site-search 
+#site-search /* zone de saisie */
 {
-    border-radius: 50px;
-    padding: 15px;
-    outline: none;
-    padding-left: 50px;
-    margin-bottom: 1%;
-    color: #0d0aa0;
-    text-size-adjust: 4em;
-    
+    border-radius: 0px;                   /* rayon de la bordure */
+    padding: 11px;                        /* remplissage de la zone de saisie */
+    outline-color: rgb(240, 240, 239);                        /* contour */
+    padding-left: 50px;                   /* remplissage à gauche */
+    margin-top: 0px;                       /* haut de la marge */
+    margin-bottom: -1px;                  /* marge inférieure */
+    color: #0d0aa0;                       
+    text-size-adjust: 4em;                /* ajustement de la taille du texte */  
+    border-bottom-left-radius: 1em;       /* rayon en bas à gauche de la bordure */
+    border-top-left-radius: 1em;          /* rayon supérieur gauche de la bordure */
+    font-size: 20px;                        /* taille de police */
+    font-weight: bold;
+    font-family: 'Raleway', Arial, sans-serif;
 }
 
-.icone
+
+.icone 
 {
     position: relative;
     left: 32px;
     top: 50%;
     transform: translateY(-50%);
     color: black;
-
 }
 
+
+/*Button search*/
 .research
 {
-    position: relative;
-    padding: 0%;
+    position: absolute;
+    background-color: #0065FC;
+    border-radius: 0px;
+    outline-color: white;                       /* couleur du contour */
+    font-size: 20px;
+    width: 150px;
+    height: 50px;
+    color: white;
+    border-bottom-right-radius: 1em;
+    border-top-right-radius: 1em;
+    font-weight: bold;                          /* poids de la police: gras */
 }
