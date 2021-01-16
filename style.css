@@ -68,27 +68,40 @@ nav a:hover
 
 #site-search /* zone de saisie */
 {
-    border-radius: 0px;                   /* rayon de la bordure */
+    border-radius: 10px;                   /* rayon de la bordure */
     padding: 11px;                        /* remplissage de la zone de saisie */
-    outline-color: rgb(240, 240, 239);                        /* contour */
+    outline-color: rgb(247, 247, 242);                        /* contour */
+    outline: 10px;
     padding-left: 50px;                   /* remplissage à gauche */
-    margin-top: 0px;                       /* haut de la marge */
-    margin-bottom: -1px;                  /* marge inférieure */
-    color: #0d0aa0;                       
+    margin-top: 10px;                       /* haut de la marge */
+    margin-bottom: 20px;                  /* marge inférieure */
+    color: #090911;                       
     text-size-adjust: 4em;                /* ajustement de la taille du texte */  
-    border-bottom-left-radius: 1em;       /* rayon en bas à gauche de la bordure */
-    border-top-left-radius: 1em;          /* rayon supérieur gauche de la bordure */
+    border-left: none;
+    border-right: none;
     font-size: 20px;                        /* taille de police */
     font-weight: bold;
     font-family: 'Raleway', Arial, sans-serif;
+    border: 2px solid rgb(252, 250, 250);
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    height: 55px;
 }
 
 
 .icone 
 {
     position: relative;
+    height: 20px;
+    width: 20px;
+    font-size: 1.2rem;
+    background-color: rgb(247, 243, 243);
+    padding: 15px 20px;
     left: 32px;
     top: 50%;
+    border: 2px solid rgb(253, 252, 252);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
     transform: translateY(-50%);
     color: black;
 }
@@ -97,15 +110,20 @@ nav a:hover
 /*Button search*/
 .research
 {
-    position: absolute;
+    position: relative;
     background-color: #0065FC;
+    font-size: 1.2rem;
     border-radius: 0px;
     outline-color: white;                       /* couleur du contour */
-    font-size: 20px;
-    width: 150px;
-    height: 50px;
+    width: 140px;
+    height: 55px;
     color: white;
-    border-bottom-right-radius: 1em;
-    border-top-right-radius: 1em;
     font-weight: bold;                          /* poids de la police: gras */
+    border-color:  #0065FC;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border: 2px solid #0065FC;
+    transform: translateX(-5%);
 }
