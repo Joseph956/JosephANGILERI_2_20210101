@@ -1,3 +1,6 @@
+/**************************************
+Eléments principaux de la page
+***************************************/
 *
 {
     margin: 0;
@@ -8,12 +11,41 @@
 body
 {
     color: #f2f2f2;
+    font-family: 'Raleway', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
-h1, h2, h3
+#bloc_page
+{
+    width: 900px;
+    height: auto;
+}
+
+header
+{
+   
+    height: 150px;
+
+}
+
+/***************************************
+Header logo 
+***************************************/
+
+
+#logo img
+{
+    width: 10%;
+    height: 20%;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+h1, h2, 
 {
     color: black;
-    margin-left: 30px;
+    margin-left: 5%;;
 }
 
 p
@@ -28,42 +60,8 @@ p
 
 
 /******************************
-de menu
+nav bar
 *******************************/
-
-.menu
-{
-    display: grid;
-    position: relative;
-    justify-content: flex-end;
-    color: #0065FC;
-}
-nav ul
-{
-    list-style-type: none;
-    display: flex;
-    padding-right: 50%;
-}
-
-nav li
-{
-    margin-right: 15px;
-    margin: 10px;
-}
-
-nav a
-{
-    font-size: 1.3em;
-    color: #181818;
-    padding-bottom: 3px;
-    text-decoration: none;
-}
-
-nav a:hover
-{
-    color: #0d0aa0;
-    border-bottom: 3px solid #760001;
-}
 
 
 /********************************
@@ -136,4 +134,117 @@ barre de recherche
 .research:hover
 {
     opacity: 0.8;
+}
+
+/*************************************
+Footer
+*************************************/
+
+footer
+{
+    background-color: rgb(247, 242, 242);
+    height: 300px;
+    width: 100%;
+    flex-shrink: 0;    /* empêche la reduction du footer */
+}
+
+.contenu  
+{
+    flex: 1 0 auto; /* le footer prend tous l'espace */
+    width: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 20px;
+    padding: 50px 0 100px;
+}
+
+.bloc
+{
+    width: 110%;
+    margin: 0 30px;
+}
+
+/* A propos */
+.a_propos h3,
+.hebergements h3,
+.assistance h3
+{
+    font-size: 20px;
+    padding-bottom: 15px;
+    color: black;
+}
+
+.a_propos,
+.hebergements,
+.assistance
+{
+    list-style-type: none;
+}
+
+.a_propos ul
+{
+    width: 100%;
+    list-style-type: none;
+}
+
+.a_propos li
+{
+    padding: 10px 0;
+}
+
+.a_propos a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.a_propos a:hover
+{
+    color: rgb(3,3,3);
+}
+
+.hebergements ul
+{
+    width: 100%;
+    list-style-type: none;
+}
+
+.hebergements li
+{
+    padding: 10px 0;
+}
+
+.hebergements a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.hebergements a:hover
+{
+    color: rgb(3,3,3);
+}
+
+.assistance ul
+{
+    width: 100%;
+    list-style-type: none;
+}
+
+.assistance li
+{
+    padding: 10px 0;
+}
+
+.assistance a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.assistance a:hover
+{
+    color: rgb(3,3,3);
 }
