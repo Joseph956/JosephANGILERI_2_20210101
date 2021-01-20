@@ -1,51 +1,26 @@
 /**************************************
-Eléments principaux de la page
+Eléments du corps de la page
 ***************************************/
 *
 {
     margin: 0;
     padding: 0;  
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', Arial, sans-serif;
+    box-sizing: border-box;
 }
 
 body
 {
-    color: #f2f2f2;
+    color: #130f0f;
     font-family: 'Raleway', Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-}
-
-#bloc_page
-{
-    width: 900px;
-    height: auto;
-}
-
-header
-{
+    display: block;
    
-    height: 150px;
-
 }
 
-/***************************************
-Header logo 
-***************************************/
-
-
-#logo img
-{
-    width: 10%;
-    height: 20%;
-    margin-top: 5%;
-    margin-left: 5%;
-}
-
-h1, h2, 
+h1, h2
 {
     color: black;
-    margin-left: 5%;;
+    margin-left: 1.5%;
 }
 
 p
@@ -55,13 +30,66 @@ p
     font-size: 1em;
     line-height: 10px;
     margin-top: 10px;
-
 }
 
+/******************************
+Header
+*******************************/
+header
+{
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    
+}
 
 /******************************
 nav bar
 *******************************/
+
+nav ul
+{
+    text-decoration: none;
+    font-weight: bold;
+    list-style-type: none;
+}
+
+nav li
+{
+    display: inline-block;
+    padding: 10px 50px 10px;
+}
+
+.ancres1 a,
+.ancres2 a
+{
+    color: #0065FC;
+}
+
+.ancres1 a:hover,
+.ancres2 a:hover
+{
+    color: #0065FC;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+.inscription
+{
+    color: rgb(23, 23, 250);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/*nav a:hover
+{
+    color:  #0065FC;
+    font-size: 1.2em;
+}*/
+
 
 
 /********************************
@@ -157,18 +185,17 @@ footer
     justify-content: center;
     align-items: flex-start;
     font-size: 20px;
-    padding: 50px 0 100px;
+    padding: 40px 10px 90px;
 }
 
 .bloc
 {
     width: 110%;
-    margin: 0 30px;
+    margin: 0 10px;
 }
 
-/* A propos */
 .a_propos h3,
-.hebergements h3,
+.nos_hebergements h3,
 .assistance h3
 {
     font-size: 20px;
@@ -176,75 +203,33 @@ footer
     color: black;
 }
 
-.a_propos,
-.hebergements,
-.assistance
-{
-    list-style-type: none;
-}
-
-.a_propos ul
-{
-    width: 100%;
-    list-style-type: none;
-}
-
-.a_propos li
-{
-    padding: 10px 0;
-}
-
-.a_propos a
-{
-    text-decoration: none;
-    color: black;
-}
-
-.a_propos a:hover
-{
-    color: rgb(3,3,3);
-}
-
-.hebergements ul
-{
-    width: 100%;
-    list-style-type: none;
-}
-
-.hebergements li
-{
-    padding: 10px 0;
-}
-
-.hebergements a
-{
-    text-decoration: none;
-    color: black;
-}
-
-.hebergements a:hover
-{
-    color: rgb(3,3,3);
-}
-
+.a_propos ul,
+.nos_hebergements ul,
 .assistance ul
 {
     width: 100%;
     list-style-type: none;
 }
 
+.a_propos li,
+.nos_hebergements li,
 .assistance li
 {
     padding: 10px 0;
 }
 
+.a_propos a,
+.nos_hebergements a,
 .assistance a
 {
     text-decoration: none;
     color: black;
 }
 
+.a_propos a:hover,
+.nos_hebergements a:hover,
 .assistance a:hover
 {
-    color: rgb(3,3,3);
+    color: rgb(44, 14, 14);
+    font-size: 1.5rem;
 }

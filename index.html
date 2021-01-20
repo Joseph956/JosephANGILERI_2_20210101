@@ -10,28 +10,23 @@
     </head>
 
     <body>
-        <div id="bloc_page">
+        <div id="bloc page">
             <header>
-                <div id="titre principal">
-                    <div id="logo">
-                    <img src="images/logo/Reservia.svg" alt="Logo de reservia" />
-                    </div>                
-                </div>
-
-                <div id="navbar">
-                    <nav class="menu">
-                        <ul>
-                            <li><a href="#"></a>Hébergements</li>
-                            <li><a href="#"></a>Activités</li>
-                            <li><a href="#"></a>S'inscrire</li>
-                        </ul>
-                    </nav>
-                </div>
-
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>  
+                <a href="#" id="logo_link">
+                    <img id="logo" src="images/logo/Reservia.svg" alt="Logo de reservia" />
+                </a> 
+                                   
+                <nav>
+                    <ul>
+                        <li class="ancres1"><a href="#hebergements">Hébergements</a></li>
+                        <li class="ancres2"><a href="#activites">Activités</a></li>
+                        <li><a class="inscription" href="#">S'inscrire</a></li>                        
+                    </ul>                
+                </nav>                               
             </header>
 
             <section>
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1> 
                 <form>
                     <div>
                         <P>En plein centre ville ou en pleine nature</P></br>
@@ -39,17 +34,22 @@
                         <input type="search" id="site-search" name="search" placeholder="Marseille, France" autofocus>
                         <input type="submit" class="research" value="Rechercher">                                        
                     </div>
-                </form>
-                
+                </form>                
             </section>
+            
+            <div>
+                <main>               
+                    <h2 id="hebergements">Hébergements à Marseille</h2>  
+                </main>
 
+                 <aside>
+                    <h2>Les plus populaires</h2>
+                </aside>
+            </div>
+         
             <section>
-                <div>
-                    <h2>Hébergements à Marseille</h2>
-
-                </div>
+                <h2 id="activités">Activités à Marseille</h2>
             </section>
-        </div> 
 
             <footer>
                 <div class="bloc contenu">
@@ -61,7 +61,7 @@
                             <li><a href="#">Données et confidentialité</a></li>
                         </ul>
                     </div>
-                    <div class="bloc hebergements">
+                    <div class="bloc nos_hebergements">
                         <h3>Nos Hébergements</h3>
                         <ul>
                             <li><a href="#">Charte qualité</a></li>
@@ -76,6 +76,7 @@
                         </ul>
                     </div>
                 </div>
-            </footer>           
+            </footer>
+        </div>        
     </body>
 </html>
