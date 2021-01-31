@@ -1,40 +1,107 @@
 /**************************************
 Eléments du corps de la page
 ***************************************/
-*
-{
-    margin: 0;
-    padding: 0;
-    border: 0; 
-    font-family: 'Raleway', Arial, sans-serif;
-    box-sizing: border-box;
-}
 
 body
 {
-    color: #130f0f;
-    font-family: 'Raleway', Arial, sans-serif;   
+    
+    font-size: 80%;
+    font-family: 'Raleway', sans-serif;
+   /* min-width: 320px;*/
 }
 
-.bloc_page
+header, main
 {
-    width: auto;
-    height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    min-width: 300px;
 }
 
-h1, h2
+main
 {
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+a
+{
+    text-decoration: none;
     color: black;
-    margin-left: 1.5%;
+}
+
+h1
+{
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 10px 0;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 3.5;
+}
+
+h2
+{
+    padding: 20px 0;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+
+h3
+{
+    padding: 10px 0;
+    font-size: 0.9em;
+    font-weight: bold;
 }
 
 p
 {
-    color: black;
+    font-size: 0.95em;
+    /*color: black;
     margin-left: 30px;
     font-size: 1em;
     line-height: 10px;
     margin-top: 10px;
+    font-family: 'Raleway', Arial, sans-serif;
+    text-align: auto;*/
+}
+
+section
+{
+    padding: 20px;
+    min-width: 320px;
+}
+
+article
+{
+    min-width: 320px;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.prices
+{
+    font-weight: bold;
+}
+
+/*.notations
+{
+    font-size: 0.8em;
+    color: #0065FC;
+}*/
+
+
+.notations
+{
+    color: #0065FC;
+    font-size: 0.8em;
+}
+
+.notations-inactive 
+{
+    display: inline;
+    color: #cac7c7;
 }
 
 /******************************
@@ -42,12 +109,24 @@ Header
 *******************************/
 header
 {
-    height: 150px;
+    flex: 0 0 100%;
+    min-width: 320px;
+    /*height: 150px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    
+    padding: 20px;*/
+}
+
+#logo-link
+{
+    width: 150px;
+}
+
+#logo
+{
+    width: 5%;
+    padding: 15px;
 }
 
 /******************************
@@ -122,7 +201,7 @@ barre de recherche
     height: 20px;
     width: 20px;
     font-size: 1.2rem;
-    background-color: rgb(247, 243, 243);
+    background-color: #f2f2f2;
     padding: 15px 20px;
     left: 32px;
     top: 50%;
@@ -169,202 +248,253 @@ Les filtres
 /*******************************
 Hebergements Marseille
 ********************************/
-
-.hotel
+.section-hebergements
 {
-    display: flex;
-}
-
-#heb-mar 
-{
-    grid-column: span 3;
-}
-
-/*****************************************
-main
-*****************************************/
-.hebergements
-{
-    width: 70%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 350px);
-    grid-template-rows: 1rem 250px 250px;
-    grid-column-gap: 2rem;
-    grid-row-gap: 2rem;
-    /*margin-top: auto;*/
+    width: 60%;
     background-color: #f2f2f2;
     border-radius: 20px;
-    padding: 3em 3em 7em 4em;
     margin-right: 3em;
-    margin-left: 2em;
-    /*padding-top: 130px;
-    padding-left: 50px;
-    padding-right: 180px;*/
-    /*background-position-x: center;*/
+    margin-left: 3.5em;
+    padding: 30px 40px 0px 50px;
+}
+
+.container-diapos-hebergements
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;    
+    /*display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(auto 14rem 2rem 2rem 14rem 2rem 2rem); 
+    grid-gap: 30px;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;*/
+    background-color: #f2f2f2;
+    padding: 5px 5px 80px 5px;
+    
+}
+.section-hebergements article
+{
+    display: flex;
+    background-color: white;
+    padding: 5px 5px 80px 5px;
 }
 
 /*****************************************
 Diapos main
 *****************************************/
-.art-heber-mar1,
-.art-heber-mar2,
-.art-heber-mar3,
-.art-heber-mar4,
-.art-heber-mar5,
-.art-heber-mar6
+.infos-diapos-hebergements
 {
-    width: 100%;
-    height: 100%;
-    background-color: #f8f8f6;     /* ok fond des diapos */
-    border: 2px solid #fcf9fb;    /* ok contour des diapos*/
     font-size: 1.2rem;
-    border-radius: 20px;            /* ok*/
-    border-right: 5px;
+    border-radius: 20px;           
+    border-right: 15px;
     border-left: 15px;
-    margin-bottom: 20px;
 }
 
 /*************************************
 Images (Hébergements à Marseille)
 *************************************/
 
-.aubg_canne,
-.hotel_port,
-.hotel_mouettes,
-.hotel_mer,
-.aubg_panier,
-.hotel_amina
-
+a .imgheberg
 {
-    width: 350px;                 
-    max-height: 125px;                 
-    min-width: 50px;              
-    margin: 0 !important;           /* ok */
-    border: 4px solid #f3f0f0;      /* ok contour des photos*/
+    width: 250px;                 
+    max-height: 150px;                 
+    min-width: 70px;              
     border-top-left-radius: 20px;       /* ok */
     border-top-right-radius: 20px       /* ok */
 }
+
 /*********************************
 Liens diapos
 *********************************/
-.marseille1:hover,
-.marseille2:hover,
-.marseille3:hover,
-.marseille4:hover,
-.marseille5:hover,
-.marseille6:hover,
-.marseille7:hover,
-.marseille8:hover,
-.marseille9:hover
-
+.infos-diapos-hebergements:hover
 {
     cursor: pointer;
+    padding: 3px;
 }
 
 /*********************************
-Prix chambres
+Section Lespluspopulaires
 *********************************/
-.infos-mar1,
-.infos-mar2,
-.infos-mar3,
-.infos-mar4,
-.infos-mar5,
-.infos-mar6,
-.infos-mar7,
-.infos-mar8,
-.infos-mar9
+#section-lespluspopulaires
 {
-    display: flex;
-}
-
-/*.infos-mar7,
-.infos-mar8,
-.infos-mar9
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-box-pack: justify;
-    padding: 5px;
-
-}*/
-
-
-/*********************************
-aside (Les plus populaires)
-*********************************/
-aside
-{
-    width: 100%;
-    background-color: #1eac25;
+    width: 25%;
     position: relative;
-    background-color: rgb(221, 35, 35);
-    display: inline-flex;
-    
+    background-color: #f2f2f2;
+    font-size: 1.3em;
+    margin-left: 120px;
 }
 
-.populaires
+#section-lespluspopulaires .fa-chart-line .titre-pops
 {
-    display: grid;
-    grid-template-columns: repeat(1, auto);
-    grid-template-rows: repeat(3, auto);
-    background-color: #f2f2f2;
-    grid-row-gap: 1rem;
-    grid-column-gap: 1rem;
-    width: 30%;
+    padding: 20px 0;
+    font-size: 1.3em;
+    padding-top: 20px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#section-lespluspopulaires, article
+{
+    padding: 0px 0px 0px 15px;
     border-radius: 20px;
-    padding-left: 3em;
-    padding-right: 3em;
-    /*vertical-align: baseline;*/
-    margin-right: 20px;
-    
+    margin: 10px 10px;
+    background-color: #f2f2f2; /*ok*/
 }
 
 /****************************************
-diapos aside
+Container diapos lespluspopulaires
 ****************************************/
-.art-heber-mar7,
-.art-heber-mar8,
-.art-heber-mar9
-{                                    
-    width: 100%;
-    height: 100%;
-    font-size: 1.2rem;
-    border-radius: 20px;            /* ok*/
-    border-right: 5px;
-    border-left: 5px;
-    border: 2px solid #138ba0;  
+#container-diapos-lespluspopulaires a
+{
+    display: flex;    
     background-color: white;
-    padding: 5px 5px 5px 5px;
-    margin-bottom: 1em;
-    display: flex;
-    display:inline-flex;
+    border-radius: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+    padding: 5px 200px 5px 5px;
+}
+
+#container-diapos-lespluspopulaires h3
+{
+    padding: 0px 0px 0px 20px;
+    display: inline-flex;
+}
+
+p 
+{
+    display: inline-flex;
+}
+
+.infos-diapos_lespluspopulaires
+{                                    
+    font-size: 1.2rem;
+    border-radius: 20px;          
 }
 
 /*********************************
-Aside images (les plus populaires)
+images lespluspopulaires
 **********************************/
-.hotel_soleil,
-.hotel_eau,
-.hotel_bleu_blanc
+a, .imgpops
 {
     width: 200px;
     max-height: 160px;
     min-width: 150px;
-    margin: 0 !important;           /* ok */
-    border: 4px solid #fdfcfc;   
     border-radius: 15px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 0%;
     border-top-right-radius: 0%;
-    /*border-top: 10px;*/
+    border-top: 10px;
     object-fit: cover;
 }
 
+.titre-pops
+{
+    padding-left: 40px;/*ok*/
+}
+
+/*************************************
+Diapos Activités à Marseille
+*************************************/
+.section-activites
+{
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container-diapos-activites
+{
+   /* max-width: 1400px;
+    width: 80%;
+    height: auto;
+    margin: 30px auto;
+    box-shadow: 5px 5px 10px #f2f2f2, -5px -5px 10px #f2f2f2;
+    border: 1px solid #333;*/
+    display: grid;
+    /*grid-template-columns: repeat(auto-fill, 300px);
+    grid-template-rows: auto 14rem 2rem 2rem 2rem 14rem;*/
+    grid-gap: 20px;
+    grid-row-gap: 5px;
+    justify-items: center;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(auto 14rem 2rem 2rem 14rem); 
+    grid-gap: 30px;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+}
+
+.imgactivites
+{
+    width: 300px;
+    height: 200px;
+    justify-items: center;       
+}
+
+
+{
+    width: 250px;
+    min-width: 160px;
+    height: 50px;
+    
+    
+}
+
+
+/*.img_activites a
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.8);
+    opacity: 0;
+    transition: opacity .5s;
+}*/
+
+/*.img_activites a:hover
+{
+    opacity: 0.5;
+}*/
+
+  
+.imgactivites
+{
+    width: 250px;
+    height: auto;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-radius: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+.imglarge
+{
+    grid-column: 1;
+    grid-row: 1 / 4;
+    border-radius: 20px;
+    display: block;
+    margin: 0;
+    min-width: 200px;
+    max-height: 650px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    align-items: stretch;
+    justify-content: space-around;
+}
 
 
 /*************************************
@@ -373,7 +503,7 @@ Footer
 
 footer
 {
-    background-color: rgb(247, 242, 242);
+    background-color: #f2f2f2;
     height: 300px;
     width: 100%;
     flex-shrink: 0;    /* empêche la reduction du footer */
