@@ -10,10 +10,10 @@ Eléments du corps de la page
 
 body
 {
-    
-    font-size: 80%;
+    width: auto;
+    align-items: center;
+    font-size: 100%;
     font-family: 'Raleway', sans-serif;
-   /* min-width: 320px;*/
 }
 
 header, main
@@ -50,7 +50,7 @@ h1
 h2
 {
     padding: 10px 0;
-    font-size: 1.8em;
+    font-size: 1.5em;
     font-weight: bold;
     font-family: 'Raleway', sans-serif;
 }
@@ -59,14 +59,13 @@ h2
 h3
 {
     padding: 10px 0;
-    font: size 0.90em;
     font-weight: bold;
     margin-left: 10px;
 }
 
 p
 {
-    font-size: 1.1em;
+    font-size: 0.98em;
     line-height: 30px;
     margin-top: -5px;
     margin-left: 20px;
@@ -75,11 +74,11 @@ p
     margin-left: 10px;
 }
 
-section
+/*section
 {
     padding: 20px;
     min-width: 320px;
-}
+}*/
 
 article
 {
@@ -96,17 +95,17 @@ article
 .notations
 {
     color: #0065FC;
-    font-size: 1em;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    margin-top: 10px;
     margin-left: 10px;
-    flex-direction: column;
 }
 
 .notations-inactive 
 {
     color: #cac7c7;
     display: inline;
+    font-size: 1em;
 }
 
 /******************************
@@ -130,8 +129,8 @@ header
 
 #logo
 {
-    width: 105%;
-    padding: 20px;
+    width: 50%;
+    padding: 90px;
 }
 
 /******************************
@@ -177,6 +176,22 @@ nav li
 /********************************
 barre de recherche
 ********************************/
+#searching h1
+{
+    padding: 0 0 15px 80px
+}
+
+#searching p
+{
+    margin: 0 0 0 90px;
+    font-size: 1.5rem;
+    padding: 0 0 15px 15px;
+}
+
+#zon-searching
+{
+    margin: 0 0 40px 70px;
+}
 
 #site-search /* zone de saisie */
 {
@@ -185,8 +200,8 @@ barre de recherche
     outline-color: rgb(247, 247, 242);                        /* contour */
     outline: 10px;
     padding-left: 50px;                   /* remplissage à gauche */
-    margin-top: 10px;                       /* haut de la marge */
-    margin-bottom: 20px;                  /* marge inférieure */
+    margin-top: 25px;                       /* haut de la marge */
+    /*margin-bottom: 10px;                  /* marge inférieure */
     color: #090911;                       
     text-size-adjust: 4em;                /* ajustement de la taille du texte */  
     border-left: none;
@@ -249,7 +264,89 @@ barre de recherche
 /*******************************
 Les filtres
 *******************************/
+#menu-filter .filter
+{
+    display: flex;
+    flex-direction: row;
+    align-content: left;
+    font-weight: bold;
+    height: 38px;
+    width: auto;
+    margin-left: 35px;
+}
 
+#container-filter
+{
+   display: flex;
+   flex-direction: row;
+   margin: 0 0 0 110px;
+}
+
+.filter  /*aligne icon et text*/
+{
+    display: flex;
+    flex-direction: row;
+    padding: 0px 25px 0px 0px;
+    border-radius: 20px;
+    text-align: left;
+    border: 2px solid #f2f2f2;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.filter p  /*mise en forme du texte*/
+{
+    font-weight: bold;
+    padding-top: 10px;
+    font-size: 1.2rem;
+}
+
+.icon /*mise en forme des icones*/
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #0065FC;
+    border: 10px solid #c8d8f8;
+    background-color: #c8d8f8;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    font-size: 1rem;
+}
+
+.info
+{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin-bottom: 2em;
+    height: 30%;
+    padding: 20px 0 10px 110px;
+    font-family: 'Raleway', Arial, sans-serif
+}
+
+.icon-info
+{
+    display: flex;
+    color: #0065FC;
+    margin: 1rem 10px 0 1rem;
+    border: 1px solid #d3d0d0;
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.info p
+{
+   padding-top: 20px;
+   font-size: 1.2rem;
+   font-weight: bold;
+}
 
 /*******************************
 Hebergements Marseille
@@ -259,10 +356,22 @@ Hebergements Marseille
     width: 55%;
     position: relative;
     background-color: #f2f2f2;
-    border-radius: 20px;
+    border-radius: 15px;
     margin-right: 3em;
-    margin-left: 3.5em;
-    padding: 30px 40px 30px 70px;
+    margin-left: 6.5em;
+    padding: 40px 10px 40px 10px;
+}
+
+#section-hebergements h2
+{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0 0 30px 60px;
+}
+
+#container-diapos-hebergements
+{
+    padding: 0 0 0 30px;    
 }
 
 #container-diapos-hebergements article
@@ -275,16 +384,17 @@ Hebergements Marseille
 .infos-diapos-hebergements
 {
     font-size: 0.9rem;
-    border-radius: 20px;           
+    border-radius: 24px;           
     border-right: 15px;
     border-left: 15px;
     background-color: white;        /*couleur de fond diapos*/
     padding: 5px 5px 5px 5px;           /*contour des diapos*/
 }
 
-.infos-diapos-hebergements h2
+.infos-diapos-hebergements h3
 {
-    margin-left: 50px;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 .infos-diapos-hebergements:hover
@@ -296,27 +406,23 @@ Hebergements Marseille
 /*************************************
 Images (Hébergements à Marseille)
 *************************************/
-
 a .imgheberg
 {
     width: 250px;                 
     max-height: 150px;                 
     min-width: 70px;              
-    border-top-left-radius: 20px;       /* ok */
-    border-top-right-radius: 20px       /* ok */
+    border-top-left-radius: 20px;       
+    border-top-right-radius: 20px       
 }
 
 /*********************************
 Liens
 *********************************/
-
-
 #Afficher_plus
 {
-    font-size: 1.8em;
+    font-size: 1.3em;
     font-weight: bold;
-    padding: 0px 0px 20px 20px;
-    border-bottom: 50px;
+    padding: 0px 0px 0px 60px;
 }
 
 /*********************************
@@ -325,38 +431,35 @@ Section Lespluspopulaires
 #section-lespluspopulaires
 {
     width: 25%;
-    height: auto;
     position: relative;
     font-size: 1.3em;
     margin-left: 100px;
-    padding: 40px 50px 30px 40px;
+    padding: 40px 60px 40px 40px;
     border-radius: 20px;
-    margin: 20px 40px;
+    margin: 0px 0px;
     background-color: #f2f2f2; 
 }
-
-/*#section-lespluspopulaires .titre-pops .fa-chart-line 
-{
-    display: flex;
-    display: inline-flex;
-    padding-inline-end: 10px;
-}*/
 
 #section-lespluspopulaires .titre-pops h2
 {
     position: relative;
-
+    margin-left: 20px;
 }
 
-#section-lespluspopulaires .titre-pops h2::after
+.titre-pops
 {
-        position: absolute;
-        font-family: 'FontAwesome';
-        font-size:30px;
-        top: 10px;
-        right: 0px;
-        color:#000;
-        content: "\f2b7";
+    display: flex;
+    flex-direction: row;
+    padding: 20px 0 0 20px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.iconpop
+{
+    display: flex;
+    padding: 10px 0 0 150px;
+    font-size: 1.8rem;
 }
 
 #section-lespluspopulaires a
@@ -371,12 +474,12 @@ Container diapos lespluspopulaires
 #container-diapos-lespluspopulaires article
 {
     background-color: white;
-    border-radius: 20px;
+    border-radius: 24px;
     margin: 10px 0;
     margin-right: 40px;
     margin-left: 40px;
     margin-top: 30px;
-    padding: 5px 15px 5px 5px;
+    padding: 5px 25px 5px 5px;
 }
 
 #container-diapos-lespluspopulaires .imgpops
@@ -398,8 +501,29 @@ Informations lespluspopulaires
     display: flex;
     flex-direction: row;
     text-align: left;
-    
 }
+
+.informations h3
+{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.informations p
+{
+    font-size: 1rem;
+    padding: 0 0 20px 0;
+}
+
+.notpop
+{
+    color: #0065FC;
+    font-size: 0.98em;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
 
 /**********************************************
 Section activites
@@ -407,138 +531,158 @@ Section activites
 #section-activites
 {
     width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    margin: 15px 0;
+    /*height: 100%;*/
+    margin: 30px 100px 80px 105px;
 }
 
-#section-activites .imgsup01
+#section-activites h2
 {
-    display: block;
-    position: relative;
-    border-radius: 20px;
-    margin: 25px 80px 0px 0px;
-    -webkit-box-shadow: 1px 0px 21px 10px rgba(191, 192, 191, 0.14);
-    box-shadow: 1px 0px 21px 10px rgba(179, 180, 180, 0.14);
-    
+    padding: 40px 0 30px 0;
 }
 
-#section-activites .imgsup02
-{
-    display: block;
-    position: relative;
-    border-radius: 20px;
-    margin: 25px 80px 50px 0px;
-    -webkit-box-shadow: 1px 0px 21px 10px rgba(158, 160, 159, 0.14);
-            box-shadow: 1px 0px 21px 10px rgba(150, 151, 151, 0.14);
-}
-
-#section-activites img
+#container-diapos-activites 
 {
     width: 100%;
-    height: 90%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-
-#section-activites h2 {
-    padding: 35px;
-}
-
-#container-diapos-activites
-{
-    width: 100%;
-    height: 100%;
-    padding-bottom: 20px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto 14rem 2rem 2rem 2rem 14rem;
-    grid-gap: 2rem;
-    
-}
-
-.calanque :nth-child(1)
-{
-    grid-column-start: 1;
-    grid-row-start: 2;
-    
-}
-
-.imghte
-{
+    /*height: 100%;*/
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 120%;
-    height: 80%;
+    justify-content: space-between;
+}
+
+.imghte         /*img vieux port et calanques */
+{
+    
+    width: 100%;
+    height: 475px;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px; 
-    margin-bottom: 1.5em;
 }
 
-.calanque
+.calanque  /* div img calanques */
 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 80%;
+    width: 25%;
+    height: 100%;
     border-radius: 20px;
+    margin: 0 10px 0 0;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    box-shadow: 5px 5px 10px #bdbdbd, -5px -5px 10px #a0a0a0;
+    /*-webkit-box-shadow: 1px 0px 21px 10px rgba(25, 158, 36, 0.14);
+    box-shadow: 1px 0px 21px 10px rgba(15, 134, 25, 0.14);*/
+    box-shadow: 5px 5px 10px #dad9d9, -5px -5px 10px #d1d1d1;
 }
 
-.vieuxport
+.calanque h3
 {
-    display: flex; 
-    flex-direction: column; 
-    width: 100%;
+    padding: 20px 0 25px 10px;
+}
+
+.vieuxport  /*div img vieux port*/
+{
+    width: 25%;
     height: 80%;
     border-radius: 20px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    box-shadow: 5px 5px 10px #a3a1a1, -5px -5px 10px #bbbbbb;
+    box-shadow: 5px 5px 10px #d3d1d1, -5px -5px 10px #d8d6d6;
 }
+
+.vieuxport h3
+{
+    padding: 25px 0 22px 10px;
+}
+
 
 .flex-col
 {
-    width: 100%;
-    height: 30%;
-    border-radius: 20px;
-    margin: -20px 30px;
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+    height: 100%;
 }
 
 
-.img01
+.imgsup  /*img pomègues frioul lagarde longchamp*/
 {
-    display: flex;
-    flex-direction: column;
     width: 100%;
-    height: 50%;
+    height: 180px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+   /* -webkit-box-shadow: 1px 0px 21px 10px rgba(122, 2, 2, 0.14);
+    box-shadow: 1px 0px 21px 10px rgba(92, 1, 1, 0.14);*/
+}
+
+.dvimg01
+{
+    width: 95%;
+    height: 250px;
+    border-radius: 20px;
+    margin: 0 0 45px 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;   
+    /*-webkit-box-shadow: 1px 0px 21px 10px rgba(141,141,141,0.14);
+    box-shadow: 1px 0px 21px 10px rgba(133, 6, 6, 0.14);*/
+    box-shadow: 5px 5px 10px #cecdcd, -5px -5px 10px #cfcece;
+        
+}
+
+.dvimg01 h3
+{
+    padding: 25px 0 25px 10px;
+}
+
+.dvimg02
+{
+    width: 95%;
+    height: 250px;
+    border-radius: 20px;
+    margin: 0 0 0px 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;   
+    /*-webkit-box-shadow: 1px 0px 21px 10px rgba(133, 11, 11, 0.14);
+    box-shadow: 1px 0px 21px 10px rgba(126, 6, 6, 0.14);*/
+    box-shadow: 5px 5px 10px #cfcdcd, -5px -5px 10px #d4d4d4;
+}
+
+.dvimg02 h3
+{
+    padding: 25px 0 25px 10px;
+}
+
+.dvimg03
+{
+    width: 95%;
+    height: 250px;
+    border-radius: 20px;
+    margin: 0 0 45px 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;   
+    /*-webkit-box-shadow: 1px 0px 21px 10px rgba(250, 249, 249, 0.14);
+    box-shadow: 1px 0px 21px 10px rgba(248, 247, 247, 0.14);*/
+    box-shadow: 5px 5px 10px #cccbcb, -5px -5px 10px #c7c7c7;
+}
+
+.dvimg03 h3
+{
+    padding: 25px 0 25px 10px;
+}
+
+.dvimg04
+{
+    width: 95%;
+    height: 250px;
     border-radius: 20px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;   
-    -webkit-box-shadow: 1px 0px 21px 10px rgba(141,141,141,0.14);
-    box-shadow: 1px 0px 21px 10px rgba(141, 141, 141, 0.14);
+    /*-webkit-box-shadow: 1px 0px 21px 10px rgba(216, 214, 214, 0.14);
+    box-shadow: 1px 0px 21px 10px rgba(219, 219, 219, 0.14);*/
+    box-shadow: 5px 5px 10px #d8d8d8, -5px -5px 10px #dddcdc;
 }
 
-.img02
+.dvimg04 h3
 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 80%;
-    border-radius: 20px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;   
-    -webkit-box-shadow: 1px 0px 21px 10px rgba(141,141,141,0.14);
-    box-shadow: 1px 0px 21px 10px rgba(126, 125, 125, 0.14);
+    padding: 25px 0 25px 10px;
 }
-
-
 
 /*************************************
 Footer
@@ -567,7 +711,7 @@ footer
 .bloc
 {
     width: 110%;
-    margin: 0 10px;
+    margin: 0 10px 0 50px;
 }
 
 .a_propos h3,
