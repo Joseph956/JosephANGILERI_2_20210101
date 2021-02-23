@@ -65,7 +65,6 @@ Les filtres
 Affichage colonne populaires-hebergt
 ************************************/
     /*Desktop pc portable*/
-/*@media all and (max-width: 1588px)*/
 @media all and (max-width: 1588px)
 {
     #revers
@@ -79,14 +78,8 @@ Affichage colonne populaires-hebergt
 /***********************************
 Media queries Hébergements
 ***********************************/
-/*Desktop ecran large*/
-@media all and (min-width: 1878px) and (max-width: 2383px) 
-{
-        
- }
      /*Desktop grand ecran*/
  @media all and (min-width: 1588px) and (max-width: 1878px) 
- /*@media all and (max-width: 1588px) and (min-width: 1878px) */
  {
      #container-diapos-hebergements
      {
@@ -107,7 +100,6 @@ Media queries Hébergements
 
     /*Desktop pc portable*/
 @media all and (min-width: 1350px) and (max-width: 1588px) 
-/*@media all and (min-width: 1588px) and (max-width: 1280px)*/
 {
     #section-hebergements
     {
@@ -146,7 +138,6 @@ Media queries Hébergements
     
         /*tablettes paysage (landscape)*/
     @media all and (min-width: 1230px) and (max-width: 1350px) 
-    /*@media all and (min-width: 1280px) and (max-width: 1024px)*/
     {
         #section-hebergements
         {
@@ -163,7 +154,6 @@ Media queries Hébergements
         .hebergements
         {
             margin: 0 0 0 40px;
-            /*padding: 10px 0 30px 40px;*/
         }
     
         a .imgheberg
@@ -175,8 +165,7 @@ Media queries Hébergements
     
     /*tablettes portrait*/
    @media all and (min-width: 768px) and (max-width: 1230px) 
-     /*@media all and (min-width: 1024px) and (max-width: 768px)*/
-    {
+   {
         #section-hebergements
         {
             width: 95%;
@@ -192,9 +181,6 @@ Media queries Hébergements
         .hebergements
         {
             margin: 0 0 0 40px;
-            /* padding: 10px 0 30px 10px;
-            padding: 15px 0px 60px 10px;
-            min-width: 350px;*/
         }
 
         a .imgheberg
@@ -204,46 +190,7 @@ Media queries Hébergements
         }
     }
 
-    
-        /*Mobiles*/
-    /*@media all and (max-width: 768px) and (min-width: 568px)
-    {
-        #section-hebergements
-        {
-            width: 100%;
-            margin-left: 2rem;
-            margin-right: 2rem;
-        }
-    
-        #section-hebergements h2
-        {
-            padding: 0 0 30px 110px;
-        }
-    
-        
-        a .imgheberg
-        {
-            width: 345px;
-            max-height: 178px;
-            margin: 0;
-            padding: 0;
-        }
-    
-        #container-diapos-hebergements
-        {
-            width: 120%;
-            padding: 0 0 0 25px;    
-        }
-    
-        /*#Afficher_plus
-        {
-            padding: 0px 0px 0px 100px;
-        }
-    
-    }*/
-
 @media all and (min-width: 300px) and (max-width: 768px) 
-/*@media all and (min-width: 768px) and (max-width: 480px) */
 {
     #section-hebergements
     {
@@ -271,13 +218,11 @@ Media queries Les plus populaires
 *********************************************************/
     /*Desktop*/
 @media all and (min-width: 1870px) and (max-width: 2383px) 
-/*@media only screen and (min-width: 2383px) and (max-width: 1870px) */
 {
     
 }
 
 @media all and (min-width: 1588px) and (max-width: 1691px) 
-/*@media all and (max-width: 1587px) and (min-width: 1691px)  */
 {
     #container-diapos-lespluspopulaires .imgpops 
     {
@@ -287,9 +232,7 @@ Media queries Les plus populaires
 }
 
     /*tablettes et pc portable*/
-/*@media all and (max-width: 1587px) and (min-width: 1200px)*/
 @media all and (min-width: 1350px) and (max-width: 1588px) 
-/*@media all and (min-width: 1587px) and (max-width: 1200px) */
 {
     #section-lespluspopulaires 
     {
@@ -303,25 +246,15 @@ Media queries Les plus populaires
         margin-left: 70px;
     }
 
-    .iconpop
-    {
-       /* padding: 10px 0 0 770px;*/
-    }
-
     #container-diapos-lespluspopulaires .imgpops 
     {
-        /*min-width: 31.5rem;*/
         max-height: 200px;
     }
 
     #container-diapos-lespluspopulaires .lespluspopulaires
     {
-        /*flex-direction: row;
-        width: 69rem;
-        min-width: 22rem;*/
         padding: 5px 4em 5px 5px;
         margin: 40px 140px 0 10px;
-        /*margin-left: 80px;*/
     }
 
     .container-imgpops
@@ -333,14 +266,12 @@ Media queries Les plus populaires
     {
         font-size: 1.6rem;
         margin: 15px 0 0 20px;
-
     }
 
     .informations p 
     {
         font-size: 1.5rem;
         margin-left: 20px;
-        
     }
 
     .notpop
@@ -351,7 +282,6 @@ Media queries Les plus populaires
 
 /*tablettes portrait*/
 @media all and (min-width: 768px) and (max-width: 1350px) 
-/*@media all and (min-width: 1200px) and (max-width: 768px) */
 {
     #section-lespluspopulaires 
     {
@@ -365,14 +295,8 @@ Media queries Les plus populaires
         margin-left: 10px;
     }
 
-    .iconpop
-    {
-       /* padding: 10px 0 0 770px;*/
-    }
-
     #container-diapos-lespluspopulaires .imgpops 
     {
-        /*min-width: 25.5rem;*/
         max-height: 200px;
     }
 
@@ -392,14 +316,12 @@ Media queries Les plus populaires
     {
         font-size: 1.6rem;
         margin: 15px 0 0 20px;
-
     }
 
     .informations p 
     {
         font-size: 1.5rem;
-        margin-left: 20px;
-        
+        margin-left: 20px;    
     }
 
     .notpop
@@ -410,7 +332,6 @@ Media queries Les plus populaires
 
     /*Mobiles*/
 @media all and (min-width: 300px) and (max-width: 768px)
-/*@media only screen and (min-width: 768px) and (max-width: 480px)*/
 {
     #section-lespluspopulaires 
     {
@@ -424,17 +345,10 @@ Media queries Les plus populaires
         margin-left: 10px;
     }
 
-    /*#container-diapos-lespluspopulaires */
     .lespluspopulaires
     {
         margin: 40px 130px 10px 30px;
     }
-
-    /*#container-diapos-lespluspopulaires .imgpops
-    {
-        min-width: 245px;
-        
-    }*/
 
     .container-imgpops
     {
@@ -451,9 +365,6 @@ Media queries Les plus populaires
 }
 
 /*************************************
-Section activites
-*************************************/
-/*************************************
 Media queries section activités
 *************************************/
 
@@ -463,6 +374,7 @@ Media queries section activités
     {
         display: block;
     }
+
     .main 
     {
         width: 100%;
@@ -476,92 +388,6 @@ Media queries section activités
         max-width: 100%;
     }   
 }
-
-/*@media all and (max-width: 1691px)
-{
-    #container-diapos-activites
-    {
-        width: 100%;
-    }
-
-    .vieuxport
-    {
-        width: 30%;
-        height: 50%;
-        margin: 0 10px 40px 30px;
-        justify-content: center;
-    }
-
-    .flex-col
-    {
-        width: 30%;
-        height: 100%;
-        margin: 0px 10px 40px 30px;
-        justify-content: center;
-    }
-
-    .calanque
-    {
-        width: 30%;
-        height: 50%;
-        margin: 0 10px 40px 30px;
-        justify-content: center;
-    }
-
-}*/
-
-/*@media all and (max-width: 1380px)
-{
-    #section-activites
-    {
-        width: 100%;
-        height: 100%;
-    }
-
-    #container-diapos-activites
-    {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-        
-    }
-
-    .vieuxport
-    {
-        width: 100%;
-        height: 50%;
-        margin: 0 10px 40px 30px;
-        justify-content: center;
-    }
-
-    .flex-col
-    {
-        width: 105%;
-        height: 100%;
-        margin: 0px 10px 40px 30px;
-        justify-content: center;
-    }
-
-    .calanque
-    {
-        width: 100%;
-        height: 50%;
-        margin: 0 10px 40px 30px;
-        justify-content: center;
-    }
-
-    .imghte
-    {
-        height: 206px;
-    }
-
-    #section-activites h2
-    {
-        padding: 40px 0 30px 44px;
-    }
-}*/
 
 /*************************************
 affichage mobile
@@ -672,7 +498,6 @@ affichage mobile
 /*************************************
 Media Queries Footer
 *************************************/
-/*@media all and (max-width: 1200px) and (min-width: 768px)*/
 @media all and (min-width: 768px) and (max-width: 1200px)
 {
     footer

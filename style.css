@@ -31,14 +31,6 @@ header, main
     margin: 0 0 0 20px;
 }
 
-/*main
-{
-    
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}*/
-
 a
 {
     text-decoration: none;
@@ -81,19 +73,6 @@ p
     text-align: left;
     margin-left: 10px;
 }
-
-/*section
-{
-    padding: 20px;
-    min-width: 320px;
-}*/
-
-/*article
-{
-    min-width: 300px;
-    max-width: 950px;
-    margin: 0 0 0 35px;
-}*/
 
 .prices
 {
@@ -201,18 +180,18 @@ barre de recherche
     margin: 0 0 40px 70px;
 }
 
-#site-search /* zone de saisie */
+#site-search 
 {
-    border-radius: 10px;                   /* rayon de la bordure */
-    padding: 11px;                        /* remplissage de la zone de saisie */
-    outline-color: rgb(247, 247, 242);                        /* contour */
+    border-radius: 10px;                   
+    padding: 11px;                       
+    outline-color: rgb(247, 247, 242);                        
     outline: 10px;
-    padding-left: 50px;                   /* remplissage à gauche */
-    margin-top: 25px;                       /* haut de la marge */
+    padding-left: 50px;                
+    margin-top: 25px;                       
     color: #03030a;                       
     border-left: none;
     border-right: none;
-    font-size: 20px;                        /* taille de police */
+    font-size: 20px;                        
     font-weight: bold;
     font-family: 'Raleway', Arial, sans-serif;
     border: 2px solid rgb(252, 250, 250);
@@ -238,17 +217,17 @@ barre de recherche
     color: black;
 }
 
-.research /*Button search*/
+.research 
 {
     position: relative;
     background-color: #0065FC;
     font-size: 1.2rem;
     border-radius: 0px;
-    outline-color: white;                       /* couleur du contour */
+    outline-color: white;                       
     width: 140px;
     height: 55px;
     color: white;
-    font-weight: bold;                          /* poids de la police: gras */
+    font-weight: bold;                         
     border-color:  #0065FC;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -285,7 +264,7 @@ Les filtres
    margin: 0 0 0 110px;
 }
 
-.filter  /*aligne icon et text*/
+.filter  
 {
     display: flex;
     flex-direction: row;
@@ -323,14 +302,14 @@ Les filtres
     min-width: 230px;
 }
 
-.filter p  /*mise en forme du texte*/
+.filter p  
 {
     font-weight: bold;
     padding-top: 10px;
     font-size: 1.2rem;
 }
 
-.icon /*mise en forme des icones*/
+.icon 
 {
     display: flex;
     align-items: center;
@@ -411,7 +390,7 @@ Hebergements Marseille
     padding: 0 0 0 30px;    
 }
 
-.hebergements /*article*/
+.hebergements 
 {
     display: inline-flex;
     padding-bottom: 60px;
@@ -426,8 +405,8 @@ Hebergements Marseille
     border-radius: 24px;           
     border-right: 15px;
     border-left: 15px;
-    background-color: white;        /*couleur de fond diapos*/
-    padding: 5px 5px 5px 5px;           /*contour des diapos*/
+    background-color: white;        
+    padding: 5px 5px 5px 5px;          
 }
 
 .infos-diapos-heberg h3
@@ -515,9 +494,6 @@ Container diapos lespluspopulaires
     background-color: white;
     border-radius: 24px;
     margin: 40px 40px 0 10px;
-    /*margin-right: 40px;*/
-    /*margin-left: 40px;*/
-    /*margin-top: 30px;*/
     padding: 5px 25px 5px 5px;
     align-content: stretch;
 }
@@ -536,7 +512,6 @@ Container diapos lespluspopulaires
 .container-imgpops
 {
     width: 107%;
-
 }
 
 .container-imgpops:hover
@@ -604,7 +579,7 @@ Section activites
     margin: auto;
 }
 
-.vieuxport  /*div img vieux port*/
+.vieuxport  
 {
     width: 25%;
     height: 80%;
@@ -627,7 +602,7 @@ Section activites
     height: 100%;
 }
 
-.calanque  /* div img calanques */
+.calanque  
 {
     width: 25%;
     height: 100%;
@@ -643,7 +618,7 @@ Section activites
     padding: 20px 0 25px 10px;
 }
 
-.imghte         /*img vieux port et calanques */
+.imghte         
 {
     width: 100%;
     height: 475px;
@@ -652,7 +627,7 @@ Section activites
     border-top-right-radius: 20px; 
 }
 
-.imgsup  /*img pomègues frioul lagarde longchamp*/
+.imgsup  
 {
     width: 100%;
     height: 180px;
@@ -732,12 +707,12 @@ footer
     background-color: #f2f2f2;
     height: 300px;
     width: 100%;
-    flex-shrink: 0;    /* empêche la reduction du footer */
+    flex-shrink: 0;    
 }
 
 .contenu  
 {
-    flex: 1 0 auto; /* le footer prend tous l'espace */
+    flex: 1 0 auto; 
     width: 100px;
     margin: 0 auto;
     display: flex;
