@@ -10,12 +10,13 @@ Eléments du corps de la page
 
 body
 {
-    width: auto;
+    width: 100%;
     align-content: center;
     font-size: 100%;
     font-family: 'Raleway', sans-serif;
     max-width: 1980px;
     margin: auto;
+    border: 2px solid #03030a;
 }
 
 header, main
@@ -44,7 +45,7 @@ h1
 h2
 {
     padding: 10px 0;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: bold;
     font-family: 'Raleway', sans-serif;
 }
@@ -67,19 +68,6 @@ p
     text-align: left;
     margin-left: 10px;
 }
-
-/*section
-{
-    padding: 20px;
-    min-width: 320px;
-}*/
-
-/*article
-{
-    min-width: 300px;
-    max-width: 950px;
-    margin: 0 0 0 35px;
-}*/
 
 .prices
 {
@@ -105,153 +93,86 @@ p
 /******************************
 Header
 *******************************/
-/*header
-{
-    flex: 0 0 100%;
-    min-width: 320px;
-    height: 150px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
-#logo-link
-{
-    width: 300px;
-}
-
-#logo
-{
-    width: 50%;
-    padding: 90px;
-}*/
-
-/******************************
-Header
-*******************************/
 header
-{
-    width: 100%;
-    height: 150px;
-    display: inline-flex;
-    align-items: flex-end;
-    justify-content: space-between;    
-}
+    {
+        width: 95%;
+        height: 150px;
+        display: flex;
+        justify-content: space-between;    
+    }
 
-#logo_link
-{
-    width: 95%;
-    height: 5%;
-    position: absolute;
-    margin: 0 0 0 60px;
-    align-items: baseline;
-    border: solid 1px black;
-}
+    #logo_link
+    {
+        
+        width: 110px;
+        padding: 15px;
+        margin: 45px 0 0 20px;
+    }
 
-header nav
-{
-    width: 100%;
-    display: flex;
-    border: solid 1px black;
-    justify-content: space-evenly; /*sépare les éléments du menu de manière indépendante*/
-}
+    nav
+    {
+        width: 95%;
+        display: flex;
+        justify-content: space-evenly; /*sépare les éléments du menu de manière indépendante*/
+    }
 
-.menu-actif
-{
-    display: flex;
-    width: auto;
-    margin: 0 0 0 50%;
-    border: solid 1px black;
-
-}
-
-.menu-actif a
-{
-    justify-content: space-between;
-}
+    .menu-actif
+    {
+        display: flex;
+        margin: 0 0 0 60%;
+    }
 
 /******************************
 nav bar
 *******************************/
-
-/*nav ul
-{
-    text-decoration: none;
-    font-weight: bold;
-    list-style-type: none;
-}
-
-nav li
-{
-    display: inline-block;
-    padding: 10px 100px 10px;
-}
-
-.ancres1 a,
-.ancres2 a
-{
-    color: #0065FC;
-    font-size: 1.5em;
-}
-
-.ancres1 a:hover,
-.ancres2 a:hover
-{
-    color: #0065FC;
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-
-
-.inscription
-{
-    color: rgb(23, 23, 250);
-    font-weight: bold;
-    font-size: 1.2rem;
-}*/
-
 nav 
-{
-    display: inline-flex;
-    justify-content: space-evenly; 
-    align-items: center;
-    
-}
+    {
+        display: inline-flex;
+        justify-content: space-evenly; 
+        align-items: center;
+    }
 
-.ancres
-{
-    width: 100%;
-    padding: 10px 50px 10px;
-    text-decoration: none;
-    font-weight: bold;
-    list-style-type: none;
-}
+    .ancres1
+    {
+        width: 100%;
+        padding: 10px 35px 10px;
+        text-decoration: none;
+        font-weight: bold;
+        color: #0065FC;
+        font-size: 1.2rem;
+        list-style-type: none;
+    }
 
-.inscription
-{
-    text-decoration: none;
-    font-weight: bold;
-    list-style-type: none;
-}
+    .ancres2
+    {
+        width: 100%;
+        padding: 10px 40px 10px;
+        text-decoration: none;
+        font-weight: bold;
+        color: #0065FC;
+        font-size: 1.2rem;
+        list-style-type: none;
+    }
 
-.ancres a
-{
-    color: #0065FC;
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-
-.inscription
-{
-    color: rgb(23, 23, 250);
-    font-weight: bold;
-    font-size: 1.2rem;
-}
+    .inscription
+    {
+        color: rgb(23, 23, 250);
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin-top: 20px;
+        text-decoration: none;
+        font-weight: bold;
+        list-style-type: none;
+    }
 
 /********************************
 barre de recherche
 ********************************/
+#searching
+{
+    margin: 30px 0 0 0;
+}
+
 #searching h1
 {
     padding: 0 0 15px 45px
@@ -266,7 +187,7 @@ barre de recherche
 
 #zon-searching
 {
-    margin: 0 0 40px 70px;
+    margin: 0 0 40px 80px;
 }
 
 #site-search /* zone de saisie */
@@ -292,18 +213,12 @@ barre de recherche
 .icone 
 {
     position: relative;
-    /*height: 20px;
-    width: 20px;*/
     font-size: 1.2rem;
     background-color: #f2f2f2;
     padding: 16px 20px 18px;
     left: 32px;
-    /*top: 50%;
-    border: 2px solid rgb(253, 252, 252);*/
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-   /* transform: translateY(-50%);
-    color: black;*/
 }
 
 .research /*Button search*/
@@ -432,7 +347,7 @@ Les filtres
     border: 1px solid #d3d0d0;
     border-radius: 100%;
     height: 30px;
-    width: 90px;
+    width: 50px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -442,7 +357,6 @@ Les filtres
 {
    padding-top: 20px;
    font-size: 1.2rem;
-   font-weight: bold;
 }
 
 /*******************************
@@ -464,8 +378,9 @@ Hebergements Marseille
     position: relative;
     background-color: #f2f2f2;
     border-radius: 15px;
+    margin: 0 40px 0 115px;
     margin-right: 3em;
-    margin-left: 5.75em;
+    margin-left: 6.75em;
     padding: 40px 10px 40px 10px;
 }
 
@@ -473,21 +388,22 @@ Hebergements Marseille
 {
     font-size: 1.5rem;
     font-weight: bold;
-    padding: 0 0 30px 60px;
+    padding: 20px 0 30px 60px;
 }
 
 #container-diapos-hebergements
 {
-    padding: 0 0 0 30px;    
+    width: auto;
+   /* padding: 0 0 0 30px;    */
 }
 
 .hebergements /*article*/
 {
     display: inline-flex;
     padding-bottom: 60px;
-    min-width: 300px;
+    min-width: 325px;
     max-width: 950px;
-    margin: 0 0 0 30px;
+    margin: 0 0 0 35px;
 }
 
 .infos-diapos-heberg 
@@ -558,9 +474,9 @@ Section Lespluspopulaires
 .titre-pops
 {
     display: flex;
-    width: 100%;
-    /*padding: 20px 0 0 20px;*/
-    font-size: 1rem;
+    width: 90%;
+    padding: 20px 0 0 20px;
+    /*font-size: 1rem;*/
     font-weight: bold;
 }
 
@@ -584,7 +500,7 @@ Container diapos lespluspopulaires
     background-color: white;
     border-radius: 24px;
     margin: 40px 0px 0 10px;
-    padding: 5px 25px 5px 5px;
+    padding: 5px 0px 5px 5px;
     align-content: stretch;
 }
 
@@ -593,7 +509,7 @@ Container diapos lespluspopulaires
     flex: 0 0 30%;
     min-height: 150px;
     max-height: 160px;
-    min-width: 150px;
+    min-width: 60px;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -628,7 +544,7 @@ Informations lespluspopulaires
 
 .informations h3
 {
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 

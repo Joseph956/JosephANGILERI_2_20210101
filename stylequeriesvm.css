@@ -1,42 +1,150 @@
+/*******************************************************
+Logo navbar
+*******************************************************/
+@media all and (min-width: 768px) and (max-width: 1588px)
+{
+    .menu-actif
+    {
+        margin: 25px 0 0 0;
+    }
+
+    .menu
+    {
+        margin-top: 20px;
+    }
+}
+
+@media all and (min-width: 300px) and (max-width: 768px) 
+{
+    header
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #logo-link 
+    {
+        position: absolute;
+        margin: 15px 0 0 20px;
+    }
+
+    nav
+    {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        position: absolute;
+        margin-top: 30px;
+    }
+
+    .menu-actif
+    {
+        display: flex;
+        align-content: flex-start;
+    }
+
+    .ancres1
+    {
+        padding: 20px 40px 10px;
+        border-bottom: 4px solid blue;
+    }
+
+    .ancres2
+    {
+        padding: 20px 40px 10px;
+        border-bottom: 4px solid rgb(230, 227, 227);
+    }
+
+    .menu
+    {
+        margin-top: 15px;
+    }
+        
+    .inscription
+    {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 40px 30px 25px 0;
+    }
+}
 /*************************************
 Barre de recherche
 *************************************/
-@media all and (min-width: 300px) and (max-width: 768px)
+@media all and (min-width: 768px) and (max-width: 1588px) 
 {
     #searching h1
     {
-        font-size: 1.5rem;
-        padding: 0 0 15px 0px
+        margin: 0 0 0 40px;
+        padding: 0 0 15px 0;
     }
 
     #searching p
     {
-        margin: 0 0 0 10px;
+        margin: 0 0 0 30px;
+    }
+}
+@media all and (max-width: 768px)
+{
+    #searching h1
+    {
         font-size: 1.2rem;
+        padding: 40px 0 15px 0px;
+        margin-left: 30px;
+    }
+
+    #searching p
+    {
+        margin: 0 0 0 25px;
+        font-size: 0.98rem;
+        padding: 0 0 15px 0;
     }
 
     #zon-searching
     {
-        margin: 25px 0 40px 10px;
+        margin: 0px 0 20px 5px;
+    }
+
+    .icone
+    {
+        left: 15px;
     }
 
     #site-search
     {
-        padding: 0 0 0 15px;
+        padding: 0 0 0 30px;
         font-size: 15px;
+        margin-top: 10px;
     }
 
     .research
     {
-        width: 60px;
+        display: none;
+        width: 50px;
+        color: #0065FC;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        transform: translateX(-30%);
+    }
 
+    .loupe .fa-search::before
+    {
+        font-family: font awesome 5free;
+        font-weight: 900;
+        content: "\f002";
+        width: 50px;
+        color: #0065FC;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        transform: translateX(-30%);
     }
 
 }
+
 /*************************************
 Les filtres
 *************************************/
-@media all and (min-width: 768px) and (max-width: 1350px) 
+@media all and (min-width: 768px) and (max-width: 1588px) 
 {
     .body
     {
@@ -47,6 +155,7 @@ Les filtres
     {
         display: flex;
         flex-wrap: wrap;
+        margin: 0 0 0 45px;
     }
 
     .filter .filter1
@@ -75,6 +184,11 @@ Les filtres
         padding: 20px 0 10px 20px;
         height: 30%;
     }
+
+    .icon-info
+    {
+        height: 50px;
+    }
 }
 
 @media all and (min-width: 300px) and (max-width: 768px) 
@@ -90,7 +204,17 @@ Les filtres
         flex-direction: column;
         align-items: flex-start;
         flex-wrap: wrap;
-        margin: 0 0 0 30px;
+        margin: 0 0 0 15px;
+    }
+
+    #container-filter h2
+    {
+        margin-left: 20px;
+    }
+
+    #menu-filter .filter
+    {
+        margin-left: 15px;
     }
 
     .filter .filter1
@@ -112,19 +236,27 @@ Les filtres
     {
         min-width: 230px;
     }
-}
 
+    .info
+    {
+        display: flex;
+        align-items: baseline;
+        margin-bottom: 0px;
+        padding: 20px 0 10px 15px;
+    }
+
+    .info p
+    {
+    font-size: 0.98rem;
+    font-weight: normal;
+    }
+}
 /************************************
 Affichage colonne populaires-hebergt
 ************************************/
     /*Desktop pc portable*/
-@media all and (max-width: 1888px)
+@media all and (max-width: 1588px)
 {
-    .body
-    {
-        width: 100%;
-    }
-    
     #revers
     {
         width: 100%;
@@ -142,13 +274,13 @@ Media queries Hébergements
         
  }
      /*Desktop grand ecran*/
- @media all and (min-width: 1888px) and (max-width: 1878px) 
+ @media all and (min-width: 1588px) and (max-width: 1878px) 
  {
     .body
     {
         width: 100%;
     }
-    
+
      #container-diapos-hebergements
      {
         padding-left: 60px;
@@ -167,18 +299,17 @@ Media queries Hébergements
 }
 
     /*Desktop pc portable*/
-@media all and (min-width: 1350px) and (max-width: 1888px) 
+@media all and (min-width: 1380px) and (max-width: 1588px) 
 {
     .body
     {
         width: 100%;
     }
-    
+
     #section-hebergements
     {
-        width: 100%;
-        margin: 10px 0 10px 15px;
-        padding: 60px 0px 40px 0px;
+        width: auto;
+        margin: 50px 0 0px 0px;
     }
 
     #section-hebergements h2
@@ -188,7 +319,7 @@ Media queries Hébergements
 
     #container-diapos-hebergements
     {
-        width: 100%;
+        width: auto;
         padding: 0 0 0 0px;
     }
     
@@ -200,7 +331,7 @@ Media queries Hébergements
     
     .hebergements
     {
-        margin-left: 79px;
+        margin-left: 45px;
     }
     
     .afficher_plus
@@ -209,69 +340,62 @@ Media queries Hébergements
     }
 }
     
-        /*tablettes paysage (landscape)*/
-    @media all and (min-width: 1230px) and (max-width: 1350px) 
+/*tablettes paysage (landscape)*/
+@media all and (min-width: 1230px) and (max-width: 1380px) 
+{
+    .body
     {
-        .body
-        {
-            width: 100%;
-        }
-    
-        #section-hebergements
-        {
-            width: 95%;
-            margin-left: 15px;
-            padding: 60px 0px 35px 30px;
-        }
-
-        #container-diapos-hebergements
-        {
-            padding: 0 35px 0 30px;
-        }
-    
-        .hebergements
-        {
-            margin: 0 0 0 40px;
-        }
-    
-        a .imgheberg
-        {
-            width: 100%;
-            max-height: 450px;
-        }
+        width: 100%;
     }
     
-    /*tablettes portrait*/
-   @media all and (min-width: 768px) and (max-width: 1230px) 
-   {
-        .body
-        {
-            width: 100%;
-        }
-    
-        #section-hebergements
-        {
-            width: 95%;
-            margin-left: 15px;
-            padding: 60px 20px 35px 20px;
-        }
-
-        #container-diapos-hebergements
-        {
-            padding: 0 35px 0 30px;
-        }
-
-        .hebergements
-        {
-            margin: 0 0 0 40px;
-        }
-
-        a .imgheberg
-        {
-            width: 100%;
-            max-height: 450px;
-        }
+    #section-hebergements
+    {
+        width: auto;
+        margin: 50px 0 0 0;
     }
+
+    #container-diapos-hebergements
+    {
+        padding: 0 35px 0 30px;
+    }
+    
+    .hebergements
+    {
+        margin: 0 0 0 40px;
+    }
+    
+    a .imgheberg
+    {
+        width: 100%;
+        max-height: 450px;
+    }
+}    
+/*tablettes portrait*/
+@media all and (min-width: 768px) and (max-width: 1230px) 
+{
+    .body
+    {
+        width: 100%;
+    }
+
+    #section-hebergements
+    {
+        width: fit-content;
+        margin: 50px 3px 0px 3px;
+        padding: 60px 20px 35px 20px;
+    }
+
+    .hebergements
+    {
+        margin: 0 40px 0 40px;
+    }
+
+    a .imgheberg
+    {
+        width: 100%;
+        max-height: 450px;
+    }
+}
 
 @media all and (min-width: 300px) and (max-width: 768px) 
 {
@@ -282,15 +406,14 @@ Media queries Hébergements
     
     #section-hebergements
     {
-        width: 88%;
-        margin: 3px;
-        padding: 40px 30px 40px 5px;
+        width: auto;
+        margin: 30px 0 0 0;
     }
 
     #section-hebergements h2
     {
         font-size: 1.2rem;
-        padding: 0 0 30px 35px;
+        padding: 0 0 30px 20px;
     }
 
     #container-diapos-hebergements
@@ -306,30 +429,22 @@ Media queries Hébergements
     }
 
     a .imgheberg
-        {
-            width: 100%;
-            /*max-height: 330px;
-            margin: 0;
-            padding: 0;*/
-        }
+    {
+        width: 100%;
+        height: 450px;
+    }
+
+    .Afficher_plus
+    {
+        padding: 0px 0px 0px 20px;
+    }
 }
        
 /*********************************************************
 Media queries Les plus populaires
 *********************************************************/
-    /*Desktop*/
-@media all and (min-width: 1870px) and (max-width: 2383px) 
+@media all and (min-width: 1588px) and (max-width: 1691px) 
 {
-    
-}
-
-@media all and (min-width: 1888px) and (max-width: 1691px) 
-{
-    .body
-    {
-        width: 100%;
-    }
-    
     #container-diapos-lespluspopulaires .imgpops 
     {
         width: 100%;
@@ -338,54 +453,55 @@ Media queries Les plus populaires
 }
 
     /*tablettes et pc portable*/
-@media all and (min-width: 1350px) and (max-width: 1888px) 
+@media all and (min-width: 1350px) and (max-width: 1588px) 
 {
-    .body
-    {
-        width: 100%;
-    }
-    
     #section-lespluspopulaires 
     {
-        width: 94%;
-        margin: 30px 15px 40px 15px;
-        padding: 30px 0px 80px 70px;
+        width: auto;
     }
 
     #section-lespluspopulaires .titre-pops h2
     {
-        margin-left: 70px;
+        margin-left: 100px;
     }
 
     .iconpop
     {
-       /* padding: 10px 0 0 770px;*/
+        padding: 10px 0 0 60%;
+    }
+    
+    #container-diapos-lespluspopulaires
+    {
+        width: auto;
     }
 
     #container-diapos-lespluspopulaires .imgpops 
     {
-       flex: 1;
+        min-width: 31.5rem;
         max-height: 200px;
     }
 
     #container-diapos-lespluspopulaires .lespluspopulaires
     {
         padding: 5px 4em 5px 5px;
-        margin: 40px 80px 0 10px;
+        margin: 40px 140px 0 90px;
+    }
+
+    .container-imgpops
+    {
+        width: revert;
     }
 
     .informations h3
     {
         font-size: 1.6rem;
         margin: 15px 0 0 20px;
-
     }
 
     .informations p 
     {
         font-size: 1.5rem;
         margin-left: 20px;
-        
     }
 
     .notpop
@@ -397,57 +513,45 @@ Media queries Les plus populaires
 /*tablettes portrait*/
 @media all and (min-width: 768px) and (max-width: 1350px) 
 {
-    .body
-    {
-        width: 100%;
-    }
-    
     #section-lespluspopulaires 
     {
-        width: 93%;
-        margin: 30px 0px 40px 15px;
+        width: auto;
+        margin: 0px 3px 0px 3px;
         padding: 30px 0px 30px 55px;
     }
 
     #section-lespluspopulaires .titre-pops h2
     {
-        margin-left: 10px;
+        margin-left: 30px;
     }
 
     .iconpop
     {
-       /* padding: 10px 0 0 770px;*/
+        padding: 10px 0 0 55%;
     }
 
     #container-diapos-lespluspopulaires .imgpops 
     {
-       max-height: 200px;
+        max-height: 200px;
     }
 
     #container-diapos-lespluspopulaires .lespluspopulaires
     {
         width: auto;
         padding: 5px 0em 5px 5px;
-        /*margin: 30px 110px 30px 15px;*/
-    }
-
-    .container-imgpops
-    {
-        width: 60%;
+        margin: 30px 110px 30px 15px;
     }
 
     .informations h3
     {
         font-size: 1.6rem;
         margin: 15px 0 0 20px;
-
     }
 
     .informations p 
     {
         font-size: 1.5rem;
         margin-left: 20px;
-        
     }
 
     .notpop
@@ -459,46 +563,68 @@ Media queries Les plus populaires
     /*Mobiles*/
 @media all and (min-width: 300px) and (max-width: 768px)
 {
-    .body
-    {
-        width: 100%;
-    }
-    
     #section-lespluspopulaires 
     {
-        width: 75%;
-        margin: 30px 0px 40px 3px;
-        padding: 40px 50px 40px 30px;
+        width: auto;
+        margin: 20px 0px 0px 0px;
+        padding: 40px 5px 40px 5px;
     }
 
     #section-lespluspopulaires .titre-pops h2
     {
-        margin-left: 10px;
+        margin-left: 25px;
+        font-size: 1.2rem;
     }
 
-    #container-diapos-lespluspopulaires .lespluspopulaires
+    #container-diapos-lespluspopulaires
     {
-        margin: 40px -30px 0 -15px;
-        padding: 5px 0 5px 5px;
+        width: fit-content;
+    }
+
+    .lespluspopulaires
+    {
+        margin: 40px 130px 10px 30px;
     }
 
     #container-diapos-lespluspopulaires .imgpops
     {
-        max-height: initial;
+        width: auto;
+        
+    }
+
+    .container-imgpops
+    {
+        width: revert;
         object-fit: cover;
     }
 
-    .iconpop
+    .informations h3
     {
-        /*padding: 10px 40px 0 50px;*/
-        margin: 7px;
-        font-size: 1.8rem;
+        font-size: 0.88rem;
+        font-weight: bold;
+    }
+
+    .informations p
+    {
+        font-size: 0.83rem;
+        padding: 0 0 20px 0;
     }
 
     .titre-pops
     {
-        width: 100%;
-        font-size: 0.90rem;
+        padding: 0 0 0 0;
+    }
+
+    .iconpop
+    {
+        display: flex;
+        padding: 10px 0 0 40px;
+        font-size: 1.8rem;
+    }
+
+    .notpop
+    {
+        font-size: 0.88em;
     }
 }
 
