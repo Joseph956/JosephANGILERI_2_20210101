@@ -294,11 +294,7 @@ Media queries Hébergements
 }
 
     /*Desktop pc portable*/
-<<<<<<< HEAD
-@media all and (min-width: 1350px) and (max-width: 1588px) 
-=======
 @media all and (min-width: 1380px) and (max-width: 1588px) 
->>>>>>> filtres
 {
     .body
     {
@@ -339,62 +335,6 @@ Media queries Hébergements
     }
 }
     
-<<<<<<< HEAD
-        /*tablettes paysage (landscape)*/
-    @media all and (min-width: 1230px) and (max-width: 1350px) 
-    {
-        #section-hebergements
-        {
-            width: 95%;
-            margin-left: 15px;
-            padding: 60px 0px 35px 30px;
-        }
-
-        #container-diapos-hebergements
-        {
-            padding: 0 35px 0 30px;
-        }
-    
-        .hebergements
-        {
-            margin: 0 0 0 40px;
-        }
-    
-        a .imgheberg
-        {
-            width: 100%;
-            max-height: 450px;
-        }
-    }
-    
-    /*tablettes portrait*/
-   @media all and (min-width: 768px) and (max-width: 1230px) 
-   {
-        #section-hebergements
-        {
-            width: 95%;
-            margin-left: 15px;
-            padding: 60px 20px 35px 20px;
-        }
-
-        #container-diapos-hebergements
-        {
-            padding: 0 35px 0 30px;
-        }
-
-        .hebergements
-        {
-            margin: 0 0 0 40px;
-        }
-
-        a .imgheberg
-        {
-            width: 100%;
-            max-height: 450px;
-        }
-    }
-
-=======
 /*tablettes paysage (landscape)*/
 @media all and (min-width: 1230px) and (max-width: 1380px) 
 {
@@ -452,7 +392,6 @@ Media queries Hébergements
     }
 }
 
->>>>>>> filtres
 @media all and (min-width: 300px) and (max-width: 768px) 
 {
     .body
@@ -499,15 +438,6 @@ Media queries Hébergements
 /*********************************************************
 Media queries Les plus populaires
 *********************************************************/
-<<<<<<< HEAD
-    /*Desktop*/
-@media all and (min-width: 1870px) and (max-width: 2383px) 
-{
-    
-}
-
-=======
->>>>>>> filtres
 @media all and (min-width: 1588px) and (max-width: 1691px) 
 {
     #container-diapos-lespluspopulaires .imgpops 
@@ -530,10 +460,6 @@ Media queries Les plus populaires
         margin-left: 100px;
     }
 
-<<<<<<< HEAD
-    #container-diapos-lespluspopulaires .imgpops 
-    {
-=======
     .iconpop
     {
         padding: 10px 0 0 60%;
@@ -547,18 +473,13 @@ Media queries Les plus populaires
     #container-diapos-lespluspopulaires .imgpops 
     {
         min-width: 31.5rem;
->>>>>>> filtres
         max-height: 200px;
     }
 
     #container-diapos-lespluspopulaires .lespluspopulaires
     {
         padding: 5px 4em 5px 5px;
-<<<<<<< HEAD
-        margin: 40px 140px 0 10px;
-=======
         margin: 40px 140px 0 90px;
->>>>>>> filtres
     }
 
     .container-imgpops
@@ -599,14 +520,11 @@ Media queries Les plus populaires
         margin-left: 30px;
     }
 
-<<<<<<< HEAD
-=======
     .iconpop
     {
         padding: 10px 0 0 55%;
     }
 
->>>>>>> filtres
     #container-diapos-lespluspopulaires .imgpops 
     {
         max-height: 200px;
@@ -628,11 +546,7 @@ Media queries Les plus populaires
     .informations p 
     {
         font-size: 1.5rem;
-<<<<<<< HEAD
-        margin-left: 20px;    
-=======
         margin-left: 20px;
->>>>>>> filtres
     }
 
     .notpop
@@ -667,15 +581,12 @@ Media queries Les plus populaires
         margin: 40px 130px 10px 30px;
     }
 
-<<<<<<< HEAD
-=======
     #container-diapos-lespluspopulaires .imgpops
     {
         width: auto;
         
     }
 
->>>>>>> filtres
     .container-imgpops
     {
         width: revert;
@@ -722,11 +633,7 @@ Media queries section activités
     {
         width: 100%;
     }
-<<<<<<< HEAD
-
-=======
     
->>>>>>> filtres
     .main 
     {
         width: 100%;
@@ -735,14 +642,11 @@ Media queries section activités
 
 @media all and (min-width: 1691px) and (max-width: 1890px)
 {
-<<<<<<< HEAD
-=======
     .body
     {
         width: 100%;
     }
     
->>>>>>> filtres
     #section-activites
     {
         max-width: 100%;

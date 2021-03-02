@@ -26,15 +26,6 @@ header, main
     min-width: 300px;
 }
 
-<<<<<<< HEAD
-#revers
-{
-    display: flex;
-    margin: 0 0 0 20px;
-}
-
-=======
->>>>>>> filtres
 a
 {
     text-decoration: none;
@@ -508,13 +499,8 @@ Container diapos lespluspopulaires
 {
     background-color: white;
     border-radius: 24px;
-<<<<<<< HEAD
-    margin: 40px 40px 0 10px;
-    padding: 5px 25px 5px 5px;
-=======
     margin: 40px 0px 0 10px;
     padding: 5px 0px 5px 5px;
->>>>>>> filtres
     align-content: stretch;
 }
 
@@ -531,11 +517,7 @@ Container diapos lespluspopulaires
 
 .container-imgpops
 {
-<<<<<<< HEAD
-    width: 107%;
-=======
     width: 100%;
->>>>>>> filtres
 }
 
 .container-imgpops:hover
