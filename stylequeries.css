@@ -245,6 +245,12 @@ Les filtres
         padding: 20px 0 10px 15px;
     }
 
+    .icon-info
+    {
+        height: 50px;
+        margin: 15px 10px 0 10px;
+    }
+
     .info p
     {
     font-size: 0.98rem;
@@ -407,19 +413,20 @@ Media queries Hébergements
     #section-hebergements
     {
         width: auto;
-        margin: 30px 0 0 0;
+        margin: 30px 5px 0 5px;
     }
 
     #section-hebergements h2
     {
         font-size: 1.2rem;
-        padding: 0 0 30px 20px;
+        padding: 10px 0 30px 40px;
     }
 
     #container-diapos-hebergements
     {
         display: flex;
         flex-direction: column;
+        padding: 0 20px 0 20px;
     }
 
     .hebergements
@@ -431,12 +438,12 @@ Media queries Hébergements
     a .imgheberg
     {
         width: 100%;
-        height: 450px;
+        max-height: 450px;
     }
 
     .Afficher_plus
     {
-        padding: 0px 0px 0px 20px;
+        padding: 0px 0px 0px 40px;
     }
 }
        
@@ -566,8 +573,8 @@ Media queries Les plus populaires
     #section-lespluspopulaires 
     {
         width: auto;
-        margin: 20px 0px 0px 0px;
-        padding: 40px 5px 40px 5px;
+        margin: 20px 5px 0px 5px;
+        padding: 40px 40px 40px 40px;
     }
 
     #section-lespluspopulaires .titre-pops h2
@@ -578,7 +585,7 @@ Media queries Les plus populaires
 
     #container-diapos-lespluspopulaires
     {
-        width: fit-content;
+        width: auto;
     }
 
     .lespluspopulaires
@@ -588,7 +595,7 @@ Media queries Les plus populaires
 
     #container-diapos-lespluspopulaires .imgpops
     {
-        width: auto;
+        min-width: 50%;
         
     }
 
@@ -600,13 +607,13 @@ Media queries Les plus populaires
 
     .informations h3
     {
-        font-size: 0.88rem;
+        font-size: 1.2rem;
         font-weight: bold;
     }
 
     .informations p
     {
-        font-size: 0.83rem;
+        font-size: 1rem;
         padding: 0 0 20px 0;
     }
 
@@ -618,13 +625,13 @@ Media queries Les plus populaires
     .iconpop
     {
         display: flex;
-        padding: 10px 0 0 40px;
+        padding: 10px 0 0 55%;
         font-size: 1.8rem;
     }
 
     .notpop
     {
-        font-size: 0.88em;
+        font-size: 1.2rem;
     }
 }
 
@@ -728,9 +735,9 @@ affichage mobile
     
     #section-activites
     {
-        width: 80%;
+        width: 90%;
         height: auto;
-        margin: 0 0 0 25px;
+        margin: 0 0 0 6px;
     }
 
     #container-diapos-activites
