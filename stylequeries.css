@@ -14,16 +14,18 @@ Logo navbar
     }
 }
 
+
 @media all and (min-width: 300px) and (max-width: 768px) 
 {
-    header
+    header a
     {
         width: 100%;
         display: flex;
         flex-direction: column;
+        margin: 15px 0 0 20px;
     }
 
-    #logo-link 
+    header #logo-link
     {
         position: absolute;
         margin: 15px 0 0 20px;
@@ -35,7 +37,7 @@ Logo navbar
         flex-direction: column-reverse;
         align-items: flex-end;
         position: absolute;
-        margin-top: 30px;
+        margin: 20px 0 0 0;
     }
 
     .menu-actif
@@ -58,7 +60,7 @@ Logo navbar
 
     .menu
     {
-        margin-top: 15px;
+        margin-top: 30px;
     }
         
     .inscription
@@ -68,6 +70,7 @@ Logo navbar
         margin: 40px 30px 25px 0;
     }
 }
+
 /*************************************
 Barre de recherche
 *************************************/
@@ -84,7 +87,7 @@ Barre de recherche
         margin: 0 0 0 30px;
     }
 }
-@media all and (max-width: 768px)
+@media all and (min-width: 568px) and (max-width: 768px)
 {
     #searching h1
     {
@@ -96,6 +99,50 @@ Barre de recherche
     #searching p
     {
         margin: 0 0 0 25px;
+        font-size: 0.98rem;
+        padding: 0 0 15px 0;
+    }
+
+    #zon-searching
+    {
+        margin: 0px 0 20px 5px;
+    }
+
+    .icone
+    {
+        left: 15px;
+    }
+
+    #site-search
+    {
+        padding: 0 0 0 30px;
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    .research
+    {
+        display: none;
+        width: 50px;
+        color: #0065FC;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        transform: translateX(-30%);
+    }
+}
+
+@media all and (min-width: 320px) and (max-width: 568px)
+{
+    #searching h1
+    {
+        font-size: 1.2rem;
+        padding: 40px 0 15px 0px;
+        margin-left: 15px;
+    }
+
+    #searching p
+    {
+        margin: 0 0 0 15px;
         font-size: 0.98rem;
         padding: 0 0 15px 0;
     }
@@ -138,7 +185,6 @@ Barre de recherche
         border-bottom-left-radius: 15px;
         transform: translateX(-30%);
     }
-
 }
 
 /*************************************
@@ -191,7 +237,7 @@ Les filtres
     }
 }
 
-@media all and (min-width: 300px) and (max-width: 768px) 
+@media all and (min-width: 568px) and (max-width: 768px)
 {
     .body
     {
@@ -257,6 +303,74 @@ Les filtres
     font-weight: normal;
     }
 }
+@media all and (min-width: 320px) and (max-width: 568px)
+{
+    .body
+    {
+        width: 100%;
+    }
+    
+    #container-filter
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        margin: 0 0 0 15px;
+    }
+
+    #container-filter h2
+    {
+        margin-left: 10px;
+    }
+
+    #menu-filter .filter
+    {
+        margin-left: 15px;
+    }
+
+    .filter .filter1
+    {
+        width: 155px;
+    }
+
+    .filter .filter2
+    {
+        width: 130px;
+    }
+
+    .filter .filter3
+    {
+        width: 150px;
+    }
+
+    .filter .filter4
+    {
+        min-width: 230px;
+    }
+
+    .info
+    {
+        display: flex;
+        align-items: baseline;
+        margin-bottom: 0px;
+        padding: 20px 0 10px 15px;
+    }
+
+    .icon-info
+    {
+        width: 40px;
+        height: 35px;
+        margin: 10px 0px 0 15px;
+    }
+
+    .info p
+    {
+    font-size: 0.98rem;
+    font-weight: normal;
+    }
+}
+
 /************************************
 Affichage colonne populaires-hebergt
 ************************************/
@@ -452,7 +566,7 @@ Media queries Hébergements
     #section-hebergements
     {
         width: auto;
-        margin: 30px 5px 0 5px;
+        margin: 50px 5px 0 5px;
     }
 
     #section-hebergements h2
@@ -465,19 +579,19 @@ Media queries Hébergements
     {
         display: flex;
         flex-direction: column;
-        padding: 0 20px 0 20px;
+        padding: 0 0px 0 0px;
     }
 
     .hebergements
     {
-        min-width: none;
+        min-width: auto;
         margin: 0 0 0 0px;
     }
 
     a .imgheberg
     {
         width: 100%;
-        max-height: 450px;
+        /*max-height: 450px;*/
     }
 
     .Afficher_plus
@@ -680,7 +794,7 @@ Media queries Les plus populaires
     {
         width: auto;
         margin: 20px 5px 0px 5px;
-        padding: 40px 40px 40px 40px;
+        padding: 40px 10px 40px 10px; /*permet de centrer la diapos*/
     }
 
     #section-lespluspopulaires .titre-pops h2
@@ -689,33 +803,38 @@ Media queries Les plus populaires
         font-size: 1.2rem;
     }
 
+    #container-diapos-lespluspopulaires
+    {
+        width: fit-content;
+    }
+
     #container-diapos-lespluspopulaires .lespluspopulaires
     {
-        width: auto;
         margin: 40px 0 0 0;
     }
 
     #container-diapos-lespluspopulaires .imgpops
     {
-        min-width: 35%;
-        
+        width: auto;
+        /*min-width: 35%;*/
     }
 
     .container-imgpops
     {
-        width: auto;
+        /*width: auto;*/
+        width: revert;
         object-fit: cover;
     }
 
     .informations h3
     {
-        font-size: 1rem;
+        font-size: 0.98rem;
         font-weight: bold;
     }
 
     .informations p
     {
-        font-size: 0.88rem;
+        font-size: 0.83rem;
         padding: 0 0 20px 0;
     }
 
@@ -727,13 +846,13 @@ Media queries Les plus populaires
     .iconpop
     {
         display: flex;
-        padding: 10px 0 0 40%;
+        padding: 10px 0 0 40px;
         font-size: 1.8rem;
     }
 
     .notpop
     {
-        font-size: 0.98rem;
+        font-size: 0.88rem;
     }
 }
 
@@ -905,7 +1024,9 @@ Media Queries Footer
     }
 }
 
-@media all and (min-width: 300px) and (max-width: 768px)
+
+
+@media all and (min-width: 568px) and (max-width: 768px)
 {
     .body
     {
@@ -930,5 +1051,40 @@ Media Queries Footer
         display: flex;
         flex-direction: column;
         
+    }
+}
+
+/*footer Mobiles*/
+@media all and (min-width: 320px) and (max-width: 568px)
+{
+    .body
+    {
+        width: 100%;
+    }
+    
+    footer
+    {
+        width: auto;
+        height: auto;
+        margin: auto;
+    }
+
+    .bloc
+    {
+        width: auto;
+        margin: 30px 0px 30px 20px;
+    }
+
+    .contenu
+    {
+        display: flex;
+        flex-direction: column;        
+    }
+
+    .a_propos a,
+    .nos_hebergements a,
+    .assistance a
+    {
+        font-size: 1rem;
     }
 }
