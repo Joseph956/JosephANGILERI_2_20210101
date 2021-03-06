@@ -34,7 +34,7 @@ a
 h1
 {
     font-weight: bold;
-    font-size: 2em;
+    font-size: 1.8rem;
     padding: 20px 0;
     margin-left: 20px;
     font-family: 'Raleway', sans-serif;
@@ -44,7 +44,7 @@ h1
 h2
 {
     padding: 10px 0;
-    font-size: 1.2em;
+    font-size: 1.5rem;
     font-weight: bold;
     font-family: 'Raleway', sans-serif;
 }
@@ -52,6 +52,7 @@ h2
 
 h3
 {
+    font-size: 1.2rem;
     padding: 10px 0;
     font-weight: bold;
     margin-left: 10px;
