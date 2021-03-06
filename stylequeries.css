@@ -5,17 +5,21 @@ Logo navbar
 {
     .menu-actif
     {
-        margin: 25px 0 0 0;
+        margin: 0 0 0 20%;
+    }
+
+    .ancres1
+    {
+        padding: 10px 90px 10px;
     }
 
     .menu
     {
-        margin-top: 20px;
+        margin-top: 0px;
     }
 }
 
-
-@media all and (min-width: 300px) and (max-width: 768px) 
+@media all and (min-width: 568px) and (max-width: 768px)
 {
     header a
     {
@@ -25,10 +29,11 @@ Logo navbar
         margin: 15px 0 0 20px;
     }
 
-    header #logo-link
+    header a #logo-link
     {
         position: absolute;
-        margin: 15px 0 0 20px;
+        padding: 15px 15px 15px 0;
+        margin: 40px 0 0 0px;
     }
 
     nav
@@ -58,11 +63,58 @@ Logo navbar
         border-bottom: 4px solid rgb(230, 227, 227);
     }
 
-    .menu
+    .inscription
     {
-        margin-top: 30px;
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 40px 30px 25px 0;
     }
-        
+}
+
+@media all and (min-width: 320px) and (max-width: 568px) 
+{
+    header a
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 15px 0 0 20px;
+    }
+
+    img #logo-link 
+    {
+        position: absolute;
+        padding: 15px 15px 15px 0;
+        margin: 40px 0 0 0px;
+    }
+
+    nav
+    {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        position: absolute;
+        margin: 20px 0 0 0;
+    }
+
+    .menu-actif
+    {
+        display: flex;
+        align-content: flex-start;
+    }
+
+    .ancres1
+    {
+        padding: 20px 40px 10px;
+        border-bottom: 4px solid blue;
+    }
+
+    .ancres2
+    {
+        padding: 20px 40px 10px;
+        border-bottom: 4px solid rgb(230, 227, 227);
+    }
+
     .inscription
     {
         display: flex;
@@ -78,20 +130,25 @@ Barre de recherche
 {
     #searching h1
     {
-        margin: 0 0 0 40px;
+        margin: 0 0 0 70px;
         padding: 0 0 15px 0;
     }
 
     #searching p
     {
-        margin: 0 0 0 30px;
+        margin: 0 0 0 60px;
+    }
+
+    #zon-searching
+    {
+        margin: 0px 0 40px 40px;
     }
 }
 @media all and (min-width: 568px) and (max-width: 768px)
 {
     #searching h1
     {
-        font-size: 1.2rem;
+        font-size: 1.8rem;
         padding: 40px 0 15px 0px;
         margin-left: 30px;
     }
@@ -99,8 +156,8 @@ Barre de recherche
     #searching p
     {
         margin: 0 0 0 25px;
-        font-size: 0.98rem;
-        padding: 0 0 15px 0;
+        font-size: 1.2rem;
+        padding: 0 0 15px 10px;
     }
 
     #zon-searching
@@ -116,7 +173,7 @@ Barre de recherche
     #site-search
     {
         padding: 0 0 0 30px;
-        font-size: 15px;
+        font-size: 25px;
         margin-top: 10px;
     }
 
@@ -135,21 +192,21 @@ Barre de recherche
 {
     #searching h1
     {
-        font-size: 1.2rem;
-        padding: 40px 0 15px 0px;
-        margin-left: 15px;
+        font-size: 1.8rem;
+        padding: 40px 0 5px 0px;
+        margin-left: 30px;
     }
 
     #searching p
     {
-        margin: 0 0 0 15px;
-        font-size: 0.98rem;
-        padding: 0 0 15px 0;
+        margin: 0 0 0 20px;
+        font-size: 1.2rem;
+        padding: 0 0 15px 10px;
     }
 
     #zon-searching
     {
-        margin: 0px 0 20px 5px;
+        margin: 0px 0 20px 10px;
     }
 
     .icone
@@ -160,7 +217,7 @@ Barre de recherche
     #site-search
     {
         padding: 0 0 0 30px;
-        font-size: 15px;
+        font-size: 25px;
         margin-top: 10px;
     }
 
@@ -174,7 +231,7 @@ Barre de recherche
         transform: translateX(-30%);
     }
 
-    .loupe .fa-search::before
+   /* .research::before
     {
         font-family: font awesome 5free;
         font-weight: 900;
@@ -184,7 +241,7 @@ Barre de recherche
         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px;
         transform: translateX(-30%);
-    }
+    }*/
 }
 
 /*************************************
@@ -201,39 +258,20 @@ Les filtres
     {
         display: flex;
         flex-wrap: wrap;
-        margin: 0 0 0 45px;
-    }
-
-    .filter .filter1
-    {
-        width: 155px;
-    }
-
-    .filter .filter2
-    {
-        width: 130px;
-    }
-
-    .filter .filter3
-    {
-        width: 150px;
-    }
-
-    .filter .filter4
-    {
-        min-width: 230px;
+        margin: 0 0 0 70px;
     }
 
     .info
     {
         align-items: baseline;
         padding: 20px 0 10px 20px;
-        height: 30%;
+        /*height: 30%;*/
+        margin-left: 30px;
     }
 
     .icon-info
     {
-        height: 50px;
+        height: 30px;
     }
 }
 
@@ -246,46 +284,29 @@ Les filtres
     
     #container-filter
     {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
         flex-wrap: wrap;
         margin: 0 0 0 15px;
     }
 
     #container-filter h2
     {
-        margin-left: 20px;
+        margin-left: 0px;
+        padding: 20px;
+    }
+
+    #menu-filter
+    {
+        display: flex;
+        flex-direction: column;
     }
 
     #menu-filter .filter
     {
-        margin-left: 15px;
-    }
-
-    .filter .filter1
-    {
-        width: 155px;
-    }
-
-    .filter .filter2
-    {
-        width: 130px;
-    }
-
-    .filter .filter3
-    {
-        width: 150px;
-    }
-
-    .filter .filter4
-    {
-        min-width: 230px;
+        margin: 10px;
     }
 
     .info
     {
-        display: flex;
         align-items: baseline;
         margin-bottom: 0px;
         padding: 20px 0 10px 15px;
@@ -299,7 +320,7 @@ Les filtres
 
     .info p
     {
-    font-size: 0.98rem;
+    font-size: 1.5rem;
     font-weight: normal;
     }
 }
@@ -312,41 +333,24 @@ Les filtres
     
     #container-filter
     {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
         flex-wrap: wrap;
-        margin: 0 0 0 15px;
+        margin: 0 0 0 10px;
     }
 
     #container-filter h2
     {
-        margin-left: 10px;
+        margin: 0 20rem 0 15px;
+    }
+
+    #menu-filter
+    {
+        display: flex;
+        flex-direction: column;
     }
 
     #menu-filter .filter
     {
-        margin-left: 15px;
-    }
-
-    .filter .filter1
-    {
-        width: 155px;
-    }
-
-    .filter .filter2
-    {
-        width: 130px;
-    }
-
-    .filter .filter3
-    {
-        width: 150px;
-    }
-
-    .filter .filter4
-    {
-        min-width: 230px;
+        margin: 10px;
     }
 
     .info
@@ -361,12 +365,12 @@ Les filtres
     {
         width: 40px;
         height: 35px;
-        margin: 10px 0px 0 15px;
+        margin: 10px 0px 0 10px;
     }
 
     .info p
     {
-    font-size: 0.98rem;
+    font-size: 1.5rem;
     font-weight: normal;
     }
 }
@@ -375,7 +379,7 @@ Les filtres
 Affichage colonne populaires-hebergt
 ************************************/
     /*Desktop pc portable*/
-@media all and (max-width: 1588px)
+@media all and (max-width: 1951px)
 {
     #revers
     {
@@ -388,75 +392,128 @@ Affichage colonne populaires-hebergt
 /***********************************
 Media queries Hébergements
 ***********************************/
+@media all and (min-width: 1892px) and (max-width: 1951px)
+{
+    .body
+    {
+        width: 100%;
+    }
+
+    #section-hebergements
+    {
+        width: auto;
+        margin: 50px 60px 0px 60px;
+    }
+
+    #section-hebergements h2
+    {
+        font-size: 2.2rem;
+        padding: 40px 0 40px 80px;
+    }
+
+    /*#container-diapos-hebergements
+    {
+        width: auto;
+    }*/
+
+    .infos-diapos-heberg h3
+    {
+        font-size: xx-large;
+    }
+
+    .infos-diapos-heberg p
+    {
+        font-size: x-large;
+    }
+
+    .notations
+    {
+        font-size: xx-large;
+    }
+    
+    a .imgheberg
+    {
+        width: 100%;
+        max-width: 445px;
+        max-height: 250px;
+    }
+    
+    .hebergements
+    {
+        max-width: none;
+        margin: 0 50px 0 50px;
+        padding-bottom: 60px;
+    }
+}
      /*Desktop grand ecran*/
- @media all and (min-width: 1588px) and (max-width: 1878px) 
+ @media all and (min-width: 1592px) and (max-width: 1892px) 
  {
     .body
     {
         width: 100%;
     }
 
-     #container-diapos-hebergements
-     {
-        padding-left: 60px;
-    }
-    
-    .hebergements
-    {
-        margin-left: 40px;
-    }
-    
-    a .imgheberg
-    {
-        width: 335px;
-        max-height: 175px;
-    }
-}
-
-    /*Desktop pc portable*/
-@media all and (min-width: 1380px) and (max-width: 1588px) 
-{
-    .body
-    {
-        width: 100%;
-    }
-
     #section-hebergements
     {
         width: auto;
-        margin: 50px 0 0px 0px;
+        margin: 50px 60px 0px 60px;
     }
 
     #section-hebergements h2
     {
-        padding: 0 0 30px 115px;
-    }
-
-    #container-diapos-hebergements
-    {
-        width: auto;
-        padding: 0 0 0 0px;
-    }
-    
-    a .imgheberg
-    {
-        width: 580px;
-        max-height: 300px;
+        font-size: 2.2rem;
+        padding: 40px 0 40px 80px;
     }
     
     .hebergements
     {
-        margin-left: 45px;
+        max-width: none;
+        margin: 0 50px 0 50px;
+        padding-bottom: 60px;
     }
-    
-    .afficher_plus
+
+    a .imgheberg
     {
-        padding: 0 0 0 120px;
+        width: 680px;
+        max-height: 290px;
+        min-width: 200px;
     }
-}
+
+    #container-diapos-hebergements
+    {
+        padding: 0 0 0 0px;   
+    }
+
+    .infos-diapos-heberg
+    {
+        padding: 15px 15px 10px 15px;
+        margin: 25px;
+    }
+
+    .infos-diapos-heberg h3
+    {
+        font-size: 2.5rem;
+        margin: 20px;
+        font-weight: 900;
+    }
+
+    .infos-diapos-heberg p
+    {
+        font-size: xx-large;
+        margin: 20px;
+    }
+
+    .notations
+    {
+        font-size: xx-large;
+        margin: 30px 0 20px 20px;
+    }
     
+}
+
+    /*Desktop pc portable*/
 /*tablettes paysage (landscape)*/
-@media all and (min-width: 1230px) and (max-width: 1380px) 
+@media all and (min-width: 1230px) and (max-width: 1858px) 
 {
     .body
     {
@@ -466,7 +523,12 @@ Media queries Hébergements
     #section-hebergements
     {
         width: auto;
-        margin: 50px 0 0 0;
+        margin: 50px 60px 0 60px;
+    }
+
+    #section-hebergements h2
+    {
+        padding: 20px 0 30px 100px;
     }
 
     #container-diapos-hebergements
@@ -476,13 +538,36 @@ Media queries Hébergements
     
     .hebergements
     {
-        margin: 0 0 0 40px;
+        max-width: none;
+        margin: 0 50px 0 50px;
+        padding-bottom: 60px;
     }
     
+    .infos-diapos-heberg
+    {
+        padding: 15px 15px 10px 15px;
+        margin: 25px;
+    }
+
+    .infos-diapos-heberg h3
+    {
+        font-size: xx-large;
+    }
+
+    .infos-diapos-heberg p
+    {
+        font-size: xx-large;
+    }
+
+    .notations
+    {
+        font-size: xx-large;
+    }
+
     a .imgheberg
     {
         width: 100%;
-        max-height: 450px;
+        max-height: 700px;
     }
 }    
 /*tablettes portrait*/
@@ -496,13 +581,36 @@ Media queries Hébergements
     #section-hebergements
     {
         width: fit-content;
-        margin: 50px 3px 0px 3px;
+        margin: 50px 40px 0px 50px;
         padding: 60px 20px 35px 20px;
     }
 
     .hebergements
     {
-        margin: 0 40px 0 40px;
+        max-width: none;
+        margin: 0 50px 0 50px;
+        padding-bottom: 60px;
+    }
+
+    .infos-diapos-heberg
+    {
+        padding: 10px 10px 10px 10px;
+        margin: 25px;
+    }
+
+    .infos-diapos-heberg h3
+    {
+        font-size: xx-large;
+    }
+
+    .infos-diapos-heberg p
+    {
+        font-size: xx-large;
+    }
+
+    .notations
+    {
+        font-size: xx-large;
     }
 
     a .imgheberg
@@ -510,9 +618,19 @@ Media queries Hébergements
         width: 100%;
         max-height: 450px;
     }
+
+    .infos-diapos-heberg h3
+    {
+        font-size: 1.5;
+    }
+
+    .infos-diapos-heberg p
+    {
+        font-size: 1.2rem;
+    }
 }
 
-@media all and (min-width: 568px) and (max-width: 960px) 
+@media all and (min-width: 568px) and (max-width: 768px) 
 {
     .body
     {
@@ -522,7 +640,7 @@ Media queries Hébergements
     #section-hebergements
     {
         width: auto;
-        margin: 30px 5px 0 5px;
+        margin: 50px 10px 0 10px;
     }
 
     #section-hebergements h2
@@ -542,6 +660,28 @@ Media queries Hébergements
     {
         min-width: none;
         margin: 0 0 0 0px;
+        padding-bottom: 60px;
+    }
+
+    .infos-diapos-heberg
+    {
+        padding: 10px 10px 10px 10px;
+        margin: 25px;
+    }
+
+    .infos-diapos-heberg h3
+    {
+        font-size: xx-large;
+    }
+
+    .infos-diapos-heberg p
+    {
+        font-size: xx-large;
+    }
+
+    .notations
+    {
+        font-size: xx-large;
     }
 
     a .imgheberg
@@ -571,8 +711,8 @@ Media queries Hébergements
 
     #section-hebergements h2
     {
-        font-size: 1.2rem;
-        padding: 10px 0 30px 40px;
+        font-size: 1.8rem;
+        padding: 10px 0 30px 10px;
     }
 
     #container-diapos-hebergements
@@ -586,38 +726,101 @@ Media queries Hébergements
     {
         min-width: auto;
         margin: 0 0 0 0px;
+        padding-bottom: 60px;
+    }
+
+    .infos-diapos-heberg h3
+    {
+        font-size: x-large;
+    }
+
+    .infos-diapos-heberg p
+    {
+        font-size: x-large;
+    }
+
+    .notations
+    {
+        font-size: x-large;
     }
 
     a .imgheberg
     {
         width: 100%;
-        /*max-height: 450px;*/
+        max-height: 450px;
     }
 
     .Afficher_plus
     {
-        padding: 0px 0px 0px 40px;
+        margin: 25px;
     }
 }
        
 /*********************************************************
 Media queries Les plus populaires
 *********************************************************/
-@media all and (min-width: 1588px) and (max-width: 1691px) 
-{
-    #container-diapos-lespluspopulaires .imgpops 
-    {
-        width: 100%;
-        max-height: 261px;
-    }
-}
-
-    /*tablettes et pc portable*/
-@media all and (min-width: 1350px) and (max-width: 1588px) 
+@media all and (min-width: 1892px) and (max-width: 1951px)
 {
     #section-lespluspopulaires 
     {
         width: auto;
+        margin: 0 60px 0 60px;
+    }
+
+    #section-lespluspopulaires .titre-pops h2
+    {
+        margin-left: 90px;
+        font-size: 2.2rem;
+    }
+
+    .iconpop
+    {
+        padding: 10px 0 0 68%;
+    }
+
+    #container-diapos-lespluspopulaires
+    {
+        width: auto;
+    }
+
+    #container-diapos-lespluspopulaires .lespluspopulaires
+    {
+        padding: 5px 4em 5px 5px;
+        margin: 40px 140px 0 90px;
+    }
+    
+    #container-diapos-lespluspopulaires .imgpops 
+    {
+        min-width: 50%;
+        max-height: 200px;
+    }
+
+    .informations h3
+    {
+        font-size: 2.1rem;
+        margin: 0px 0 5px 35px;
+    }
+
+    .informations p 
+    {
+        font-size: 2rem;
+        margin-left: 35px;
+    }
+
+    .notpop
+    {
+        margin: 10px 0 0 30px;
+        font-size: 1.8rem;
+    }  
+}
+
+    /*tablettes et pc portable*/
+@media all and (min-width: 1547px) and (max-width: 1892px)
+{
+    #section-lespluspopulaires 
+    {
+        width: auto;
+        margin: 0 60px 0 60px;
     }
 
     #section-lespluspopulaires .titre-pops h2
@@ -637,7 +840,7 @@ Media queries Les plus populaires
 
     #container-diapos-lespluspopulaires .imgpops 
     {
-        min-width: 31.5rem;
+        min-width: 50%;
         max-height: 200px;
     }
 
@@ -654,29 +857,81 @@ Media queries Les plus populaires
 
     .informations h3
     {
-        font-size: 1.6rem;
-        margin: 15px 0 0 20px;
+        font-size: 2.1rem;
+        margin: 0px 0 5px 35px;
     }
 
     .informations p 
     {
-        font-size: 1.5rem;
-        margin-left: 20px;
+        font-size: 2rem;
+        margin-left: 35px;
     }
 
     .notpop
     {
-        margin: 18px 0 0 20px;
+        margin: 10px 0 0 30px;
+        font-size: 1.8rem;
     }  
 }
 
-/*tablettes portrait*/
-@media all and (min-width: 768px) and (max-width: 1350px) 
+@media all and (min-width: 1230px) and (max-width: 1547px) 
 {
     #section-lespluspopulaires 
     {
         width: auto;
-        margin: 0px 3px 0px 3px;
+        margin: 0px 60px 0px 60px;
+        padding: 30px 0px 30px 55px;
+    }
+
+    #section-lespluspopulaires .titre-pops h2
+    {
+        margin-left: 70px;
+    }
+
+    .iconpop
+    {
+        padding: 10px 0 0 60%;
+    }
+
+    #container-diapos-lespluspopulaires .imgpops 
+    {
+        min-width: 50%;
+        max-height: 200px;
+    }
+
+    #container-diapos-lespluspopulaires .lespluspopulaires
+    {
+        width: auto;
+        padding: 5px 0em 5px 5px;
+        margin: 30px 120px 30px 70px;
+    }
+
+    .informations h3
+    {
+        font-size: 2.1rem;
+        margin: 0px 0 5px 35px;
+    }
+
+    .informations p 
+    {
+        font-size: 2rem;
+        margin-left: 35px;
+    }
+
+    .notpop
+    {
+        margin: 10px 0 0 30px;
+        font-size: 1.8rem;
+    }  
+}
+
+/*tablettes portrait*/
+@media all and (min-width: 768px) and (max-width: 1230px)  
+{
+    #section-lespluspopulaires 
+    {
+        width: auto;
+        margin: 0px 40px 0px 50px;
         padding: 30px 0px 30px 55px;
     }
 
@@ -687,12 +942,13 @@ Media queries Les plus populaires
 
     .iconpop
     {
-        padding: 10px 0 0 55%;
+        padding: 10px 0 0 30%;
     }
 
     #container-diapos-lespluspopulaires .imgpops 
     {
-        max-height: 200px;
+        min-width: 50%;
+        max-height: 250px;
     }
 
     #container-diapos-lespluspopulaires .lespluspopulaires
@@ -704,40 +960,42 @@ Media queries Les plus populaires
 
     .informations h3
     {
-        font-size: 1.6rem;
-        margin: 15px 0 0 20px;
+        font-size: 1.8rem;
+        margin: 0px 0 5px 25px;
     }
 
     .informations p 
     {
         font-size: 1.5rem;
-        margin-left: 20px;
+        margin-left: 15px;
     }
 
     .notpop
     {
-        margin: 18px 0 0 20px;
-    }
+        margin: 0px 0 0 15px;
+        font-size: 1.5rem;
+    }  
 }
 
-@media all and (min-width: 568px) and (max-width: 960px)
+@media all and (min-width: 568px) and (max-width: 768px)
 {
     #section-lespluspopulaires 
     {
         width: auto;
-        margin: 20px 5px 0px 5px;
+        margin: 20px 10px 0px 10px;
         padding: 40px 0px 40px 0px;
     }
 
     #section-lespluspopulaires .titre-pops h2
     {
-        margin-left: 25px;
+        margin-left: 90px;
         font-size: 1.2rem;
     }
 
     #container-diapos-lespluspopulaires .lespluspopulaires
     {
         width: auto;
+        margin: 30px 80px 30px 60px;
     }
 
     .lespluspopulaires
@@ -769,15 +1027,10 @@ Media queries Les plus populaires
         padding: 0 0 20px 0;
     }
 
-    .titre-pops
-    {
-        padding: 0 0 0 0;
-    }
-
     .iconpop
     {
         display: flex;
-        padding: 10px 0 0 55%;
+        padding: 10px 0 0 35%;
         font-size: 1.8rem;
     }
 
@@ -799,8 +1052,8 @@ Media queries Les plus populaires
 
     #section-lespluspopulaires .titre-pops h2
     {
-        margin-left: 10px;
-        font-size: 1.2rem;
+        margin-left: 30px;
+        font-size: 1.5rem;
     }
 
     #container-diapos-lespluspopulaires
@@ -810,18 +1063,19 @@ Media queries Les plus populaires
 
     #container-diapos-lespluspopulaires .lespluspopulaires
     {
-        margin: 40px 0 0 0;
+        width: auto;
+        margin: 30px;
+        padding: 5px 0px 5px 5px;
     }
 
     #container-diapos-lespluspopulaires .imgpops
     {
         width: auto;
-        /*min-width: 35%;*/
+        min-width: 45%;
     }
 
     .container-imgpops
     {
-        /*width: auto;*/
         width: revert;
         object-fit: cover;
     }
@@ -846,7 +1100,7 @@ Media queries Les plus populaires
     .iconpop
     {
         display: flex;
-        padding: 10px 0 0 40px;
+        padding: 10px 0 0 15%;
         font-size: 1.8rem;
     }
 
@@ -889,7 +1143,7 @@ Media queries section activités
 /*************************************
 affichage mobile
 *************************************/
-@media all and (min-width: 768px) and (max-width: 1588px)
+@media all and (min-width: 1425px) and (max-width: 1588px)
 {
     .body
     {
@@ -900,6 +1154,7 @@ affichage mobile
     {
         width: 100%;
         height: auto;
+        margin: 0 0 0 0;
     }
 
     #container-diapos-activites
@@ -912,25 +1167,25 @@ affichage mobile
 
     .vieuxport
     {
-        width: 94%;
+        width: 92%;
         height: 50%;
-        margin: 0 10px 40px 40px;
+        margin: 0 0 40px 60px;
         justify-content: center;
     }
 
     .flex-col
     {
-        width: 94%;
+        width: 92%;
         height: 100%;
-        margin: 0px 10px 40px 40px;
+        margin: 0px 10px 40px 60px;
         justify-content: center;
     }
 
     .calanque
     {
-        width: 94%;
+        width: 92%;
         height: 50%;
-        margin: 0 10px 40px 40px;
+        margin: 0 10px 40px 60px;
         justify-content: center;
     }
 
@@ -941,10 +1196,125 @@ affichage mobile
 
     #section-activites h2
     {
-        padding: 40px 0 30px 44px;
+        padding: 40px 0 30px 80px;
     }
 }
-@media all and (min-width: 300px) and (max-width: 768px)
+
+@media all and (min-width: 1230px) and (max-width: 1425px)
+{
+    .body
+    {
+        width: 100%;
+    }
+    
+    #section-activites
+    {
+        width: 100%;
+        height: auto;
+        margin: 0 0 0 0;
+    }
+
+    #container-diapos-activites
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .vieuxport
+    {
+        width: 91%;
+        height: 50%;
+        margin: 0 0 40px 60px;
+        justify-content: center;
+    }
+
+    .flex-col
+    {
+        width: 91%;
+        height: 100%;
+        margin: 0px 10px 40px 60px;
+        justify-content: center;
+    }
+
+    .calanque
+    {
+        width: 91%;
+        height: 50%;
+        margin: 0 10px 40px 60px;
+        justify-content: center;
+    }
+
+    .imghte
+    {
+        height: 206px;
+    }
+
+    #section-activites h2
+    {
+        padding: 40px 0 30px 80px;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1230px)
+{
+    .body
+    {
+        width: 100%;
+    }
+    
+    #section-activites
+    {
+        width: 100%;
+        height: auto;
+        margin: 0 0 0 0;
+    }
+
+    #container-diapos-activites
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .vieuxport
+    {
+        width: 92%;
+        height: 50%;
+        margin: 0 0 40px 50px;
+        justify-content: center;
+    }
+
+    .flex-col
+    {
+        width: 92%;
+        height: 100%;
+        margin: 0px 10px 40px 50px;
+        justify-content: center;
+    }
+
+    .calanque
+    {
+        width: 92%;
+        height: 50%;
+        margin: 0 10px 40px 50px;
+        justify-content: center;
+    }
+
+    .imghte
+    {
+        height: 206px;
+    }
+
+    #section-activites h2
+    {
+        padding: 40px 0 30px 80px;
+    }
+}
+
+@media all and (min-width: 568px) and (max-width: 768px)
 {
     .body
     {
@@ -955,7 +1325,7 @@ affichage mobile
     {
         width: 90%;
         height: auto;
-        margin: 0 0 0 6px;
+        margin: 0 0 0 13px;
     }
 
     #container-diapos-activites
@@ -1001,10 +1371,68 @@ affichage mobile
     }
 }
 
+@media all and (min-width: 320px) and (max-width: 568px)
+{
+    .body
+    {
+        width: 100%;
+    }
+    
+    #section-activites
+    {
+        width: 90%;
+        height: auto;
+        margin: 0 0 0 13px;
+    }
+
+    #container-diapos-activites
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .vieuxport
+    {
+        width: 105%;
+        height: 50%;
+        margin: 0 10px 40px 5px;
+        justify-content: center;
+    }
+
+    .flex-col
+    {
+        width: 105%;
+        height: 100%;
+        margin: 0px 10px 40px 5px;
+        justify-content: center;
+    }
+
+    .calanque
+    {
+        width: 105%;
+        height: 50%;
+        margin: 0 10px 40px 5px;
+        justify-content: center;
+    }
+
+    .imghte
+    {
+        height: 206px;
+    }
+
+    #section-activites h2
+    {
+        padding: 40px 0 30px 20px;
+        font-size: 1.8rem;
+    }
+}
+
 /*************************************
 Media Queries Footer
 *************************************/
-@media all and (min-width: 768px) and (max-width: 1200px)
+@media all and (min-width: 768px) and (max-width: 1588px)
 {
     .body
     {
@@ -1020,10 +1448,19 @@ Media Queries Footer
 
     .bloc
     {
-        margin: 0 100px 50px 10px;
+        margin: 0 40px 50px 35px;
     }
 }
 
+@media all and (min-width: 768px) and (max-width: 1230px)
+{
+    .contenu
+    {
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
 
 
 @media all and (min-width: 568px) and (max-width: 768px)

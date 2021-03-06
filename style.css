@@ -16,7 +16,6 @@ body
     font-family: 'Raleway', sans-serif;
     max-width: 1980px;
     margin: auto;
-    border: 2px solid #03030a;
 }
 
 header, main
@@ -45,7 +44,7 @@ h1
 h2
 {
     padding: 10px 0;
-    font-size: 1.2em;
+    font-size: 1.5em;
     font-weight: bold;
     font-family: 'Raleway', sans-serif;
 }
@@ -60,9 +59,8 @@ h3
 
 p
 {
-    font-size: 0.98em;
+    font-size: 1rem;
     line-height: 30px;
-    margin-top: -5px;
     margin-left: 20px;
     font-family: 'Raleway', Arial, sans-serif;
     text-align: left;
@@ -119,7 +117,8 @@ header
     .menu-actif
     {
         display: flex;
-        margin: 0 0 0 60%;
+        justify-content: space-around;
+        margin: 0 0 0 40%;
     }
 
 /******************************
@@ -135,7 +134,7 @@ nav
     .ancres1
     {
         width: 100%;
-        padding: 10px 35px 10px;
+        padding: 10px 120px 10px;
         text-decoration: none;
         font-weight: bold;
         color: #0065FC;
@@ -149,7 +148,7 @@ nav
         padding: 10px 40px 10px;
         text-decoration: none;
         font-weight: bold;
-        color: #0065FC;
+        color: grey;
         font-size: 1.2rem;
         list-style-type: none;
     }
@@ -170,24 +169,24 @@ barre de recherche
 ********************************/
 #searching
 {
-    margin: 30px 0 0 0;
+    margin: 10px 0 0 0;
 }
 
 #searching h1
 {
-    padding: 0 0 15px 45px
+    padding: 0 0 15px 30px
 }
 
 #searching p
 {
-    margin: 0 0 0 90px;
+    margin: 0 0 0 70px;
     font-size: 1.5rem;
     padding: 0 0 15px 15px;
 }
 
 #zon-searching
 {
-    margin: 0 0 40px 80px;
+    margin: 0 0 40px 55px;
 }
 
 #site-search 
@@ -201,7 +200,7 @@ barre de recherche
     color: #03030a;                       
     border-left: none;
     border-right: none;
-    font-size: 20px;                        
+    font-size: 25px;                        
     font-weight: bold;
     font-family: 'Raleway', Arial, sans-serif;
     border: 2px solid rgb(252, 250, 250);
@@ -221,8 +220,9 @@ barre de recherche
     border-bottom-left-radius: 15px;
 }
 
-.research 
+.research
 {
+    content: "Rechercher";
     position: relative;
     background-color: #0065FC;
     font-size: 1.2rem;
@@ -252,20 +252,16 @@ Les filtres
 *******************************/
 #menu-filter .filter
 {
-    display: flex;
-    flex-direction: row;
-    align-content: space-around;
     font-weight: bold;
     height: 38px;
-    width: auto;
+    width: max-content;
     margin-left: 35px;
 }
 
 #container-filter
 {
    display: flex;
-   flex-direction: row;
-   margin: 0 0 0 110px;
+   margin: 0 0 0 90px;
 }
 
 .filter  
@@ -310,7 +306,7 @@ Les filtres
 {
     font-weight: bold;
     padding-top: 10px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .icon 
@@ -335,7 +331,7 @@ Les filtres
     height: 50px;
     margin-bottom: 2em;
     height: 30%;
-    padding: 20px 0 10px 110px;
+    padding: 20px 0 10px 70px;
     font-family: 'Raleway', Arial, sans-serif
 }
 
@@ -347,7 +343,7 @@ Les filtres
     border: 1px solid #d3d0d0;
     border-radius: 100%;
     height: 30px;
-    width: 50px;
+    width: 30px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -356,7 +352,7 @@ Les filtres
 .info p
 {
    padding-top: 20px;
-   font-size: 1.2rem;
+   font-size: 1.5rem;
 }
 
 /*******************************
@@ -377,38 +373,34 @@ Hebergements Marseille
     width: 55%;
     position: relative;
     background-color: #f2f2f2;
-    border-radius: 15px;
-    margin: 0 40px 0 115px;
-    margin-right: 3em;
-    margin-left: 6.75em;
+    border-radius: 35px;
+    margin: 0 40px 0 80px;
     padding: 40px 10px 40px 10px;
 }
 
 #section-hebergements h2
 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
-    padding: 20px 0 30px 60px;
+    padding: 20px 0 30px 70px;
 }
 
 #container-diapos-hebergements
 {
     width: auto;
-   /* padding: 0 0 0 30px;    */
+    padding: 0 0 0 30px;   
 }
 
 .hebergements 
 {
     display: inline-flex;
-    padding-bottom: 60px;
-    min-width: 325px;
     max-width: 950px;
-    margin: 0 0 0 35px;
+    margin: 35px 35px 60px 35px;
 }
 
 .infos-diapos-heberg 
 {
-    font-size: 0.9rem;
+    font-size: 1rem;
     border-radius: 24px;           
     border-right: 15px;
     border-left: 15px;
@@ -418,7 +410,7 @@ Hebergements Marseille
 
 .infos-diapos-heberg h3
 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
@@ -445,9 +437,9 @@ Liens
 *********************************/
 .Afficher_plus
 {
-    font-size: 1.3em;
+    font-size: 1.5em;
     font-weight: bold;
-    padding: 0px 0px 0px 60px;
+    margin: 65px;
 }
 
 /*********************************
@@ -459,7 +451,7 @@ Section Lespluspopulaires
     position: relative;
     font-size: 1.3em;
     margin-left: 100px;
-    padding: 40px 60px 40px 40px;
+    padding: 40px 60px 80px 40px;
     border-radius: 20px;
     margin: 0px 0px;
     background-color: #f2f2f2; 
@@ -476,14 +468,14 @@ Section Lespluspopulaires
     display: flex;
     width: 90%;
     padding: 20px 0 0 20px;
-    /*font-size: 1rem;*/
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
 .iconpop
 {
     display: flex;
-    padding: 10px 0 0 150px;
+    padding: 10px 0 0 90px;
     font-size: 1.8rem;
 }
 
@@ -499,9 +491,9 @@ Container diapos lespluspopulaires
 {
     background-color: white;
     border-radius: 24px;
-    margin: 40px 0px 0 10px;
     padding: 5px 0px 5px 5px;
     align-content: stretch;
+    margin: 50px;
 }
 
 #container-diapos-lespluspopulaires .imgpops
@@ -544,13 +536,13 @@ Informations lespluspopulaires
 
 .informations h3
 {
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: bold;
 }
 
 .informations p
 {
-    font-size: 1rem;
+    font-size: 1.1rem;
     padding: 0 0 20px 0;
 }
 
@@ -568,9 +560,8 @@ Section activites
 **********************************************/
 #section-activites
 {
-    max-width: 1730px;
     height: 800px;
-    margin: auto;
+    margin: 0 160px 0 80px;
 }
 
 #section-activites h2
@@ -730,8 +721,8 @@ footer
 
 .bloc
 {
-    width: 90%;
-    margin: auto;
+    width: 95%;
+    margin: 0 0 0 45px;
 }
 
 .a_propos h3,
