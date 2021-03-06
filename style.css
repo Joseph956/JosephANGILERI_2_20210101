@@ -44,7 +44,7 @@ h1
 h2
 {
     padding: 10px 0;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: bold;
     font-family: 'Raleway', sans-serif;
 }
@@ -380,7 +380,7 @@ Hebergements Marseille
 
 #section-hebergements h2
 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: bold;
     padding: 20px 0 30px 70px;
 }

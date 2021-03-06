@@ -81,7 +81,7 @@ Logo navbar
         margin: 15px 0 0 20px;
     }
 
-    img #logo-link 
+    #logo-link 
     {
         position: absolute;
         padding: 15px 15px 15px 0;
@@ -119,7 +119,7 @@ Logo navbar
     {
         display: flex;
         flex-direction: column-reverse;
-        margin: 40px 30px 25px 0;
+        margin: 55px 30px 25px 0;
     }
 }
 
@@ -192,43 +192,42 @@ Barre de recherche
 {
     #searching h1
     {
-        font-size: 1.8rem;
-        padding: 40px 0 5px 0px;
-        margin-left: 30px;
+        font-size: 1.6rem;
+        padding: 40px 0 15px 0px;
+        margin: 35px 25px 0 25px;
     }
 
     #searching p
     {
-        margin: 0 0 0 20px;
+        margin: 0 10px 10px 0px;
         font-size: 1.2rem;
-        padding: 0 0 15px 10px;
+        padding: 0 20px 0px 25px;
     }
 
     #zon-searching
     {
-        margin: 0px 0 20px 10px;
+        margin: 0 0 25px 20px;
     }
 
     .icone
     {
-        left: 15px;
+        left: 5px;
     }
 
     #site-search
     {
-        padding: 0 0 0 30px;
+        padding: 10px;
         font-size: 25px;
-        margin-top: 10px;
     }
 
     .research
     {
-        display: none;
+        /*display: none;*/
         width: 50px;
         color: #0065FC;
         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px;
-        transform: translateX(-30%);
+        transform: translateX(-160%);
     }
 
    /* .research::before
@@ -334,7 +333,7 @@ Les filtres
     #container-filter
     {
         flex-wrap: wrap;
-        margin: 0 0 0 10px;
+        margin: 0 0 0 20px;
     }
 
     #container-filter h2
@@ -358,7 +357,7 @@ Les filtres
         display: flex;
         align-items: baseline;
         margin-bottom: 0px;
-        padding: 20px 0 10px 15px;
+        padding: 20px 0 10px 20px;
     }
 
     .icon-info
@@ -370,7 +369,7 @@ Les filtres
 
     .info p
     {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: normal;
     }
 }
@@ -545,7 +544,7 @@ Media queries Hébergements
     
     .infos-diapos-heberg
     {
-        padding: 15px 15px 10px 15px;
+        padding: 5px 5px 10px 5px;
         margin: 25px;
     }
 
@@ -594,7 +593,7 @@ Media queries Hébergements
 
     .infos-diapos-heberg
     {
-        padding: 10px 10px 10px 10px;
+        padding: 5px 5px 5px 5px;
         margin: 25px;
     }
 
@@ -711,7 +710,7 @@ Media queries Hébergements
 
     #section-hebergements h2
     {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         padding: 10px 0 30px 10px;
     }
 
@@ -727,21 +726,6 @@ Media queries Hébergements
         min-width: auto;
         margin: 0 0 0 0px;
         padding-bottom: 60px;
-    }
-
-    .infos-diapos-heberg h3
-    {
-        font-size: x-large;
-    }
-
-    .infos-diapos-heberg p
-    {
-        font-size: x-large;
-    }
-
-    .notations
-    {
-        font-size: x-large;
     }
 
     a .imgheberg
@@ -1053,12 +1037,12 @@ Media queries Les plus populaires
     #section-lespluspopulaires .titre-pops h2
     {
         margin-left: 30px;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     #container-diapos-lespluspopulaires
     {
-        width: fit-content;
+        width: auto;
     }
 
     #container-diapos-lespluspopulaires .lespluspopulaires
