@@ -26,26 +26,25 @@ Logo navbar
         width: 100%;
         display: flex;
         flex-direction: column;
-        margin: 15px 0 0 20px;
     }
 
-    header a #logo-link
+    #logo-link
     {
         position: absolute;
-        padding: 15px 15px 15px 0;
-        margin: 40px 0 0 0px;
+        padding: 15px;
+        margin: 45px 0 0 0px;
     }
 
     .menu-actif
     {
         display: flex;
         align-content: flex-start;
-        margin: 0 0 0 0%;
+        margin: 0 0 0 20%;
     }
 
     .ancres1
     {
-        padding: 15px 40px 10px;
+        padding: 15px 0px 10px 0;
     }
 
     .ancres2
@@ -57,7 +56,7 @@ Logo navbar
     {
         display: flex;
         flex-direction: column-reverse;
-        margin: 40px 30px 25px 0;
+        margin: 30px 30px 25px 0;
     }
 }
 
@@ -138,21 +137,26 @@ Barre de recherche
 {
     #searching h1
     {
-        font-size: 1.8rem;
-        padding: 40px 0 15px 0px;
-        margin-left: 30px;
+        font-size: 1.5rem;
+        padding: 0px 0 15px 0px;
+        margin-left: 60px;
     }
 
     #searching p
     {
-        margin: 0 0 0 25px;
+        margin: 0 0 0 50px;
         font-size: 1.2rem;
         padding: 0 0 15px 10px;
     }
 
+    #site-search
+    {
+        width: 50%;
+    }
+
     #zon-searching
     {
-        margin: 0px 0 20px 5px;
+        margin: 0px 0 20px 40px;
     }
 
     .icone
@@ -165,7 +169,7 @@ Barre de recherche
 {
     #searching h1
     {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         padding: 40px 0 15px 0px;
         margin: 35px 25px 0 25px;
     }
@@ -255,7 +259,7 @@ Les filtres
     #container-filter
     {
         flex-wrap: wrap;
-        margin: 0 0 0 15px;
+        margin: 0 0 0 40px;
     }
 
     #container-filter h2
@@ -285,7 +289,8 @@ Les filtres
     .icon-info
     {
         height: 50px;
-        margin: 15px 10px 0 10px;
+        width: 50px;
+        margin: 15px 10px 0 40px;
     }
 
     .info p
@@ -953,6 +958,7 @@ Media queries Les plus populaires
     {
         margin-left: 0px;
         font-size: 1.5rem;
+        padding: 10px 0 0 25px;
     }
 
     #container-diapos-lespluspopulaires
