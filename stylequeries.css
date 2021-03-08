@@ -165,7 +165,7 @@ Barre de recherche
 {
     #searching h1
     {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         padding: 40px 0 15px 0px;
         margin: 35px 25px 0 25px;
     }
@@ -189,8 +189,8 @@ Barre de recherche
 
     #site-search 
     {
-        width: 58%;
-        font-size: 20px;
+        width: 55%;
+        font-size: 15px;
     }
 
     .research
@@ -381,11 +381,6 @@ Media queries Hébergements
         padding: 40px 0 40px 80px;
     }
 
-    /*#container-diapos-hebergements
-    {
-        width: auto;
-    }*/
-
     .infos-diapos-heberg h3
     {
         font-size: xx-large;
@@ -431,7 +426,7 @@ Media queries Hébergements
 
     #section-hebergements h2
     {
-        font-size: 2.2rem;
+        font-size: 1.8rem;
         padding: 40px 0 40px 80px;
     }
     
@@ -585,7 +580,7 @@ Media queries Hébergements
 
     #section-hebergements h2
     {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         padding: 10px 0 30px 40px;
     }
 

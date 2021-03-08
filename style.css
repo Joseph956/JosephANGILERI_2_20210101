@@ -314,7 +314,6 @@ Les filtres
     font-weight: bold;
     padding: 5px 2px;
     font-size: 1.2rem;
-    /*margin-left: 0px;*/
 }
 
 .icon 
@@ -480,15 +479,9 @@ Section Lespluspopulaires
         right: 20px;
         color:#000;
         content: "\f201";
-        padding: 30px;
-        margin: 20px;
+        padding: 27px 0 0 20px;
+        margin: 20px 40px 20px 0px;
 }
-
-/*#section-lespluspopulaires .titre-pops h2
-{
-    position: relative;
-    margin-left: 20px;
-}*/
 
 .titre-pops
 {
