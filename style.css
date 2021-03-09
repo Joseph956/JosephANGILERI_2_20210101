@@ -219,7 +219,7 @@ barre de recherche
     border-radius: 0px;                
     outline-color: rgb(247, 247, 242);                        
     outline: 10px;
-    padding: 33px;                
+    padding: 35px;                
     margin-top: 25px;                       
     color: #03030a;                       
     border-left: none;
@@ -381,6 +381,12 @@ Les filtres
    font-size: 1.5rem;
 }
 
+.fa-info::before
+{
+    content: "\f129";
+    width: 30px;
+}
+
 /*******************************
 Div hebergements et populaires
 *******************************/
@@ -399,7 +405,7 @@ Hebergements Marseille
     width: 55%;
     position: relative;
     background-color: #f2f2f2;
-    border-radius: 35px;
+    border-radius: 20px;
     margin: 0 40px 0 80px;
     padding: 40px 10px 40px 10px;
 }
@@ -499,7 +505,7 @@ Section Lespluspopulaires
         color:#000;
         content: "\f201";
         padding: 27px 0 0 20px;
-        margin: 20px 40px 20px 0px;
+        margin: 20px 20px 20px 0px;
 }
 
 .titre-pops

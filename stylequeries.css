@@ -201,18 +201,23 @@ Barre de recherche
     .icone
     {
         left: 5px;
+        font-size: 1rem;
     }
 
     #site-search 
     {
-        width: 55%;
+        width: 60%;
+        height: 20px;
         font-size: 15px;
+        padding: 30px;
     }
 
     .research
     {
         position: absolute;
         opacity: 0;
+        width: 0;
+        height: 0;
     }
 
     .fa-search::before 
@@ -221,10 +226,10 @@ Barre de recherche
         content: "\f002";
         font-family: "Font Awesome 5 Free";
         font-weight: 900;
-        font-size: 1.5rem;
-        color: blanchedalmond;
-        width: 70px;
-        height: 70px;
+       /* font-size: 1.5rem;*/
+        color: rgb(250, 249, 249);
+        width: 60px;
+        height: 60px;
         background: #0065FC;
         border-radius: 15px;
         display: flex;
@@ -354,7 +359,7 @@ Les filtres
     {
         width: 40px;
         height: 35px;
-        margin: 10px 0px 0 10px;
+        margin: 10px 0px 0 5px;
     }
 
     .info p
@@ -671,7 +676,7 @@ Media queries Hébergements
     a .imgheberg
     {
         width: 100%;
-        max-height: 450px;
+        max-height: 200px;
     }
 
     .Afficher_plus
@@ -1422,7 +1427,7 @@ Media Queries Footer
     footer
     {
         width: auto;
-        height: auto;
+        height: 800px;
         margin: auto;
     }
 
