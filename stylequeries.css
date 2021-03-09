@@ -8,7 +8,7 @@ Logo navbar
         margin: 0 0 0 0%;
     }
 
-    .ancres1
+    #ancres1
     {
         padding: 10px 90px 10px;
     }
@@ -42,12 +42,12 @@ Logo navbar
         margin: 0 0 0 20%;
     }
 
-    .ancres1
+    #ancres1
     {
         padding: 15px 0px 10px 0;
     }
 
-    .ancres2
+    #ancres2
     {
         padding: 15px 40px 10px;
     }
@@ -92,23 +92,35 @@ Logo navbar
         align-content: flex-start;
     }
 
-    .ancres1
+    #ancres1
     {
         padding: 20px 40px 10px 35px;
-        border-bottom: 4px solid blue;
+        border-bottom: 4px solid rgb(230, 227, 227);
     }
 
-    .ancres2
+    #ancres1:hover
+    {
+        color: #0065FC;
+        border-bottom: 3px solid #0065FC;
+    }
+
+    #ancres2
     {
         padding: 20px 20px 10px 30px;
         border-bottom: 4px solid rgb(230, 227, 227);
+    }
+
+    #ancres2:hover
+    {
+        color: #0065FC;
+        border-bottom: 3px solid #0065FC;
     }
 
     .inscription
     {
         display: flex;
         flex-direction: column-reverse;
-        margin: 55px 30px 25px 0;
+        margin: 48px 30px 25px 0;
     }
 }
 
@@ -199,11 +211,13 @@ Barre de recherche
 
     .research
     {
-        display: none;
+        position: absolute;
+        opacity: 0;
     }
 
     .fa-search::before 
     {
+        position: relative;
         content: "\f002";
         font-family: "Font Awesome 5 Free";
         font-weight: 900;
