@@ -226,11 +226,12 @@ Barre de recherche
         content: "\f002";
         font-family: "Font Awesome 5 Free";
         font-weight: 900;
-       /* font-size: 1.5rem;*/
+        font-size: 1.2rem;
         color: rgb(250, 249, 249);
         width: 60px;
         height: 60px;
         background: #0065FC;
+        border: 5px solid #0065FC;
         border-radius: 15px;
         display: flex;
         justify-content: center;
@@ -395,7 +396,7 @@ Media queries Hébergements
 
     #section-hebergements
     {
-        width: auto;
+        width: 94%;
         margin: 50px 60px 0px 60px;
     }
 
@@ -405,37 +406,23 @@ Media queries Hébergements
         padding: 40px 0 40px 80px;
     }
 
-    .infos-diapos-heberg h3
-    {
-        font-size: xx-large;
-    }
-
-    .infos-diapos-heberg p
-    {
-        font-size: x-large;
-    }
-
-    .notations
-    {
-        font-size: xx-large;
-    }
-    
     a .imgheberg
     {
         width: 100%;
         max-width: 445px;
-        max-height: 250px;
+        max-height: 200px;
     }
     
     .hebergements
     {
-        max-width: none;
+        max-width: 50%;
+        width: 27%;
         margin: 0 50px 0 50px;
         padding-bottom: 60px;
     }
 }
      /*Desktop grand ecran*/
- @media all and (min-width: 1592px) and (max-width: 1892px) 
+ @media all and (min-width: 1433px) and (max-width: 1892px) 
  {
     .body
     {
@@ -456,16 +443,17 @@ Media queries Hébergements
     
     .hebergements
     {
-        max-width: none;
+        max-width: 42%;
         margin: 0 50px 0 50px;
         padding-bottom: 60px;
     }
 
     a .imgheberg
     {
-        width: 680px;
-        max-height: 290px;
-        min-width: 200px;
+        width: 100%;
+        max-height: 250px;
+        min-width: 445px;
+
     }
 
     #container-diapos-hebergements
@@ -481,28 +469,28 @@ Media queries Hébergements
 
     .infos-diapos-heberg h3
     {
-        font-size: 1.8rem;
-        margin: 20px;
+        font-size: 1.5rem;
+        margin: 10px 0 0 15px;
         font-weight: 900;
     }
 
     .infos-diapos-heberg p
     {
-        font-size: 1.5rem;
-        margin: 20px;
+        font-size: 1.2rem;
+        margin: 0 0 0 15px;
     }
 
     .notations
     {
         font-size: 1.5rem;
-        margin: 30px 0 20px 20px;
+        margin: 15px 0 20px 15px;
     }
     
 }
 
     /*Desktop pc portable*/
 /*tablettes paysage (landscape)*/
-@media all and (min-width: 1230px) and (max-width: 1858px) 
+@media all and (min-width: 1024px) and (max-width: 1433px) 
 {
     .body
     {
@@ -511,7 +499,7 @@ Media queries Hébergements
     
     #section-hebergements
     {
-        width: auto;
+        width: 90%;
         margin: 50px 60px 0 60px;
     }
 
@@ -527,9 +515,9 @@ Media queries Hébergements
     
     .hebergements
     {
-        max-width: none;
-        margin: 0 50px 0 50px;
-        padding-bottom: 60px;
+        width: auto;
+        margin: 0px 0 30px 25px;
+        padding: 0px;
     }
     
     .infos-diapos-heberg
@@ -538,14 +526,33 @@ Media queries Hébergements
         margin: 25px;
     }
 
+    .infos-diapos-heberg h3
+    {
+        font-size: 1.5rem;
+        margin: 10px 0 0 15px;
+        font-weight: 900;
+    }
+
+    .infos-diapos-heberg p
+    {
+        font-size: 1.2rem;
+        margin: 0 0 0 15px;
+    }
+
+    .notations
+    {
+        font-size: 1.5rem;
+        margin: 15px 0 20px 15px;
+    }
+
     a .imgheberg
     {
         width: 100%;
-        max-height: 700px;
+        max-height: 450px;
     }
 }    
 /*tablettes portrait*/
-@media all and (min-width: 768px) and (max-width: 1230px) 
+@media all and (min-width: 768px) and (max-width: 1024px) 
 {
     .body
     {
@@ -554,7 +561,7 @@ Media queries Hébergements
 
     #section-hebergements
     {
-        width: fit-content;
+        width: auto;
         margin: 50px 40px 0px 50px;
         padding: 60px 20px 35px 20px;
     }
@@ -562,7 +569,7 @@ Media queries Hébergements
     .hebergements
     {
         max-width: none;
-        margin: 0 50px 0 50px;
+        margin: 0 0px 0 0px;
         padding-bottom: 60px;
     }
 
@@ -589,7 +596,7 @@ Media queries Hébergements
     }
 }
 
-@media all and (min-width: 568px) and (max-width: 768px) 
+@media all and (min-width: 1024px) and (max-width: 768px) 
 {
     .body
     {
@@ -640,7 +647,7 @@ Media queries Hébergements
     }
 }
 
-@media all and (min-width: 320px) and (max-width: 568px)
+@media all and (min-width: 320px) and (max-width: 768px)
 {
     .body
     {
@@ -676,7 +683,7 @@ Media queries Hébergements
     a .imgheberg
     {
         width: 100%;
-        max-height: 200px;
+        max-height: 450px;
     }
 
     .Afficher_plus
@@ -692,7 +699,8 @@ Media queries Les plus populaires
 {
     #section-lespluspopulaires 
     {
-        width: auto;
+        width: 90%;
+        display: inline-block;
         margin: 0 60px 0 60px;
     }
 
@@ -700,6 +708,11 @@ Media queries Les plus populaires
     {
         margin-left: 70px;
         font-size: 1.5rem;
+    }
+
+    #section-lespluspopulaires a 
+    {
+        display: inline-block;
     }
 
     .iconpop
@@ -710,36 +723,46 @@ Media queries Les plus populaires
     #container-diapos-lespluspopulaires
     {
         width: auto;
+        display: flex;
     }
 
     #container-diapos-lespluspopulaires .lespluspopulaires
     {
-        padding: 5px 4em 5px 5px;
-        margin: 40px 140px 0 90px;
+        font-size: 1rem;
+        border-radius: 24px;
+        border-right: 15px;
+        border-left: 15px;
+        margin: 30px;
+        background-color: white;
+        padding: 5px 5px 5px 5px;
+        box-shadow: 5px 5px 10px #cecdcd, -5px -5px 10px #cfcece;
     }
     
     #container-diapos-lespluspopulaires .imgpops 
     {
-        min-width: 50%;
-        max-height: 200px;
+        width: 100%;
+        max-height: 250px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
     }
 
     .informations h3
     {
-        font-size: 1.8rem;
-        margin: 0px 0 5px 35px;
+        font-size: 1.5rem;
+        margin: 0px 0 5px 15px;
     }
 
     .informations p 
     {
-        font-size: 1.5rem;
-        margin-left: 35px;
+        font-size: 1.2rem;
+        margin-left: 15px;
     }
 
     .notpop
     {
-        margin: 10px 0 0 30px;
-        font-size: 1.5rem;
+        margin: 0px 0 10px 15px;
+        font-size: 1.2rem;
     }  
 }
 
@@ -749,12 +772,18 @@ Media queries Les plus populaires
     #section-lespluspopulaires 
     {
         width: auto;
+        display: inline-block;
         margin: 0 60px 0 60px;
     }
 
     #section-lespluspopulaires .titre-pops h2
     {
         margin-left: 60px;
+    }
+
+    #section-lespluspopulaires a 
+    {
+        display: inline-block;
     }
 
     .iconpop
@@ -765,6 +794,77 @@ Media queries Les plus populaires
     #container-diapos-lespluspopulaires
     {
         width: auto;
+        display: flex;
+    }
+
+    #container-diapos-lespluspopulaires .lespluspopulaires
+    {
+        font-size: 1rem;
+        border-radius: 24px;
+        border-right: 15px;
+        border-left: 15px;
+        margin: 30px;
+        background-color: white;
+        padding: 5px 5px 5px 5px;
+        box-shadow: 5px 5px 10px #cecdcd, -5px -5px 10px #cfcece;
+    }
+    
+    #container-diapos-lespluspopulaires .imgpops 
+    {
+        width: 100%;
+        max-height: 250px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .container-imgpops
+    {
+        width: revert;
+    }
+
+    .informations h3
+    {
+        font-size: 1.5rem;
+        margin: 0px 0 5px 10px;
+    }
+
+    .informations p 
+    {
+        font-size: 1.2rem;
+        margin-left: 10px;
+    }
+
+    .notpop
+    {
+        margin: 0px 0 10px 10px;
+        font-size: 1.2rem;
+    }  
+}
+
+@media all and (min-width: 1230px) and (max-width: 1547px) 
+{
+    #section-lespluspopulaires 
+    {
+        width: auto;
+        display: inline-block;
+        margin: 0px 60px 0px 60px;
+    }
+
+    #section-lespluspopulaires .titre-pops h2
+    {
+        margin-left: 40px;
+        font-size: 1.5rem;
+    }
+
+    #section-lespluspopulaires a 
+    {
+        display: inline-block;
+    }
+
+    .iconpop
+    {
+        padding: 10px 0 0 60%;
     }
 
     #container-diapos-lespluspopulaires .imgpops 
@@ -773,16 +873,33 @@ Media queries Les plus populaires
         max-height: 200px;
     }
 
-    #container-diapos-lespluspopulaires .lespluspopulaires
+    #container-diapos-lespluspopulaires
     {
-        padding: 5px 4em 5px 5px;
-        margin: 40px 140px 0 90px;
+        width: auto;
+        display: flex;
     }
 
-    .container-imgpops
+    #container-diapos-lespluspopulaires .lespluspopulaires
     {
-        width: revert;
+        font-size: 1rem;
+        border-radius: 24px;
+        border-right: 15px;
+        border-left: 15px;
+        margin: 15px;
+        background-color: white;
+        padding: 5px 5px 5px 5px;
+        box-shadow: 5px 5px 10px #cecdcd, -5px -5px 10px #cfcece;
     }
+    
+    #container-diapos-lespluspopulaires .imgpops 
+    {
+        width: 100%;
+        max-height: 210px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+    }
+
 
     .informations h3
     {
@@ -800,58 +917,6 @@ Media queries Les plus populaires
     {
         margin: 10px 0 0 15px;
         font-size: 1.2rem;
-    }  
-}
-
-@media all and (min-width: 1230px) and (max-width: 1547px) 
-{
-    #section-lespluspopulaires 
-    {
-        width: auto;
-        margin: 0px 60px 0px 60px;
-        padding: 30px 0px 30px 55px;
-    }
-
-    #section-lespluspopulaires .titre-pops h2
-    {
-        margin-left: 40px;
-        font-size: 1.5rem;
-    }
-
-    .iconpop
-    {
-        padding: 10px 0 0 60%;
-    }
-
-    #container-diapos-lespluspopulaires .imgpops 
-    {
-        min-width: 50%;
-        max-height: 200px;
-    }
-
-    #container-diapos-lespluspopulaires .lespluspopulaires
-    {
-        width: auto;
-        padding: 5px 0em 5px 5px;
-        margin: 30px 120px 30px 70px;
-    }
-
-    .informations h3
-    {
-        font-size: 1.8rem;
-        margin: 0px 0 5px 35px;
-    }
-
-    .informations p 
-    {
-        font-size: 1.5rem;
-        margin-left: 35px;
-    }
-
-    .notpop
-    {
-        margin: 10px 0 0 30px;
-        font-size: 1.5rem;
     }  
 }
 
@@ -970,7 +1035,7 @@ Media queries Les plus populaires
     {
         width: auto;
         margin: 20px 5px 0px 5px;
-        padding: 40px 10px 40px 10px; /*permet de centrer la diapos*/
+        padding: 40px 10px 40px 10px; 
     }
 
     #section-lespluspopulaires .titre-pops h2
@@ -1052,7 +1117,7 @@ Media queries section activités
     }
 }
 
-@media all and (min-width: 1691px) and (max-width: 1890px)
+@media all and (min-width: 1548px) and (max-width: 1960px)
 {
     .body
     {
@@ -1061,12 +1126,12 @@ Media queries section activités
     
     #section-activites
     {
-        max-width: 100%;
+        width: 92%;
     }   
 }
 
 /*************************************
-affichage mobile
+affichage tablette
 *************************************/
 @media all and (min-width: 1425px) and (max-width: 1588px)
 {
@@ -1239,6 +1304,9 @@ affichage mobile
     }
 }
 
+/*************************************
+affichage mobile
+*************************************/
 @media all and (min-width: 568px) and (max-width: 768px)
 {
     .body

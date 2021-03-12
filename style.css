@@ -134,7 +134,7 @@ nav
 
     #ancres1
     {
-        width: 100%;
+        width: 50%;
         padding: 10px 120px 10px;
         text-decoration: none;
         font-weight: bold;
@@ -146,12 +146,11 @@ nav
     #ancres1:hover
     {
         color: #0065FC;
-        /*border-top: 3px solid #0065FC;*/
     }
 
     #ancres2
     {
-        width: 100%;
+        width: 50%;
         padding: 10px 40px 10px;
         text-decoration: none;
         font-weight: bold;
@@ -163,7 +162,6 @@ nav
     #ancres2:hover
     {
         color: #0065FC;
-       /* border-top: 3px solid #0065FC;*/
     }
 
     .inscription
@@ -331,8 +329,9 @@ Les filtres
 .filter p  
 {
     font-weight: bold;
-    padding: 5px 2px;
+    padding: 5px 6px 0 0px;
     font-size: 1.2rem;
+    margin-left: 3px;
 }
 
 .icon 
@@ -437,7 +436,8 @@ Hebergements Marseille
     border-right: 15px;
     border-left: 15px;
     background-color: white;        
-    padding: 5px 5px 5px 5px;          
+    padding: 5px 5px 5px 5px;  
+    box-shadow: 5px 5px 10px #cecdcd, -5px -5px 10px #cfcece;        
 }
 
 .infos-diapos-heberg h3
@@ -449,7 +449,6 @@ Hebergements Marseille
 .infos-diapos-heberg:hover
 {
     cursor: pointer;
-    padding: 10px;
 }
 
 /*************************************
@@ -461,7 +460,8 @@ a .imgheberg
     max-height: 150px;                 
     min-width: 70px;              
     border-top-left-radius: 20px;       
-    border-top-right-radius: 20px       
+    border-top-right-radius: 20px
+    
 }
 
 /*********************************
@@ -539,7 +539,8 @@ Container diapos lespluspopulaires
     border-radius: 24px;
     padding: 5px 0px 5px 5px;
     align-content: stretch;
-    margin: 50px;
+    margin: 60px;
+    box-shadow: 5px 5px 10px #cecdcd, -5px -5px 10px #cfcece;
 }
 
 #container-diapos-lespluspopulaires .imgpops
@@ -561,7 +562,6 @@ Container diapos lespluspopulaires
 .container-imgpops:hover
 {
     cursor: pointer;
-    padding: 5px;
 }
 
 /*********************************
