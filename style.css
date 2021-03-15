@@ -100,7 +100,7 @@ header
         justify-content: space-between;    
     }
 
-    #logo_link
+#logo_link
     {
         
         width: 110px;
@@ -108,14 +108,14 @@ header
         margin: 35px 0 0 25px;
     }
 
-    nav
+nav
     {
         width: 95%;
         display: flex;
         justify-content: space-evenly; /*sépare les éléments du menu de manière indépendante*/
     }
 
-    .menu-actif
+.menu-actif
     {
         display: flex;
         justify-content: space-around;
@@ -126,47 +126,47 @@ header
 nav bar
 *******************************/
 nav 
-    {
-        display: inline-flex;
-        justify-content: space-evenly; 
-        align-items: center;
-    }
+{
+    display: inline-flex;
+    justify-content: space-evenly; 
+    align-items: center;
+}
 
-    #ancres1
-    {
-        width: 100%;
-        padding: 10px 120px 10px;
-        text-decoration: none;
-        font-weight: bold;
-        color: grey;
-        font-size: 1.2rem;
-        list-style-type: none;
-    }
+#ancres1
+{
+    width: 100%;
+    padding: 10px 120px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: grey;
+    font-size: 1.2rem;
+    list-style-type: none;
+}
 
-    #ancres1:hover
-    {
-        color: #0065FC;
-        /*border-top: 3px solid #0065FC;*/
-    }
+#ancres1:hover
+{
+    color: #0065FC;
+    /*border-top: 3px solid #0065FC;*/
+}
 
-    #ancres2
-    {
-        width: 100%;
-        padding: 10px 40px 10px;
-        text-decoration: none;
-        font-weight: bold;
-        color: grey;
-        font-size: 1.2rem;
-        list-style-type: none;
-    }
+#ancres2
+{
+    width: 100%;
+    padding: 10px 40px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: grey;
+    font-size: 1.2rem;
+    list-style-type: none;
+}
 
-    #ancres2:hover
+#ancres2:hover
     {
         color: #0065FC;
        /* border-top: 3px solid #0065FC;*/
     }
 
-    .inscription
+.inscription
     {
         color: rgb(23, 23, 250);
         font-weight: bold;
@@ -176,6 +176,7 @@ nav
         font-weight: bold;
         list-style-type: none;
     }
+
 
 /********************************
 barre de recherche
@@ -331,8 +332,9 @@ Les filtres
 .filter p  
 {
     font-weight: bold;
-    padding: 5px 2px;
+    padding: 5px 6px 0px 0;
     font-size: 1.2rem;
+    margin: 1px;
 }
 
 .icon 
@@ -427,7 +429,7 @@ Hebergements Marseille
 {
     display: inline-flex;
     max-width: 950px;
-    margin: 35px 35px 60px 35px;
+    margin: 15px;
 }
 
 .infos-diapos-heberg 
@@ -437,7 +439,8 @@ Hebergements Marseille
     border-right: 15px;
     border-left: 15px;
     background-color: white;        
-    padding: 5px 5px 5px 5px;          
+    padding: 5px 5px 5px 5px;  
+    box-shadow: 5px 5px 10px #cecdcd, -5px -5px 10px #cfcece;        
 }
 
 .infos-diapos-heberg h3
@@ -457,11 +460,12 @@ Images (Hébergements à Marseille)
 *************************************/
 a .imgheberg
 {
-    width: 260px;                 
+    width: 300px;                 
     max-height: 150px;                 
     min-width: 70px;              
     border-top-left-radius: 20px;       
-    border-top-right-radius: 20px       
+    border-top-right-radius: 20px;
+    object-fit: cover;     
 }
 
 /*********************************
@@ -539,13 +543,13 @@ Container diapos lespluspopulaires
     border-radius: 24px;
     padding: 5px 0px 5px 5px;
     align-content: stretch;
-    margin: 50px;
+    margin: 35px 30px;
 }
 
 #container-diapos-lespluspopulaires .imgpops
 {
-    flex: 0 0 30%;
-    min-height: 150px;
+    flex: 0 0 40%;
+    min-height: 190px;
     max-height: 160px;
     min-width: 60px;
     object-fit: cover;
