@@ -231,7 +231,6 @@ Barre de recherche
         content: "\f002";
         font-family: "Font Awesome 5 Free";
         font-weight: 900;
-       /* font-size: 1.5rem;*/
         color: rgb(250, 249, 249);
         width: 60px;
         height: 60px;
@@ -1062,7 +1061,7 @@ Media queries Les plus populaires
     {
         width: auto;
         margin: 20px 5px 0px 5px;
-        padding: 40px 10px 40px 10px; /*permet de centrer la diapos*/
+        padding: 40px 10px 40px 10px;
     }
 
     #section-lespluspopulaires .titre-pops h2
@@ -1136,6 +1135,12 @@ Media queries section activités
     {
         width: 100%;
     }
+
+    #section-activites
+    {
+        max-width: 100%;
+        margin: 0 60px 0 60px;
+    }   
 }
 
 @media all and (min-width: 1691px) and (max-width: 1890px)
@@ -1148,8 +1153,25 @@ Media queries section activités
     #section-activites
     {
         max-width: 100%;
+        margin: 0 60px 0 60px;
     }   
 }
+
+@media all and (min-width: 1588px) and (max-width: 1691px)
+{
+    .body
+    {
+        width: 100%;
+    }
+    
+    #section-activites
+    {
+        max-width: 100%;
+        margin: 0 60px 0 60px;
+    }   
+}
+
+
 
 /*************************************
 affichage mobile
