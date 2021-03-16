@@ -112,7 +112,7 @@ nav
     {
         width: 95%;
         display: flex;
-        justify-content: space-evenly; /*sépare les éléments du menu de manière indépendante*/
+        justify-content: space-evenly; 
     }
 
 .menu-actif
@@ -174,7 +174,6 @@ nav
 #ancres1:hover
 {
     color: #0065FC;
-    /*border-top: 3px solid #0065FC;*/
 }
 
 #ancres2
@@ -463,7 +462,7 @@ Hebergements Marseille
 {
     display: inline-flex;
     max-width: 950px;
-    margin: 15px;
+    margin: 15px 15px 40px 15px;
 }
 
 .infos-diapos-heberg 
