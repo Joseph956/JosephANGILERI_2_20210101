@@ -231,10 +231,6 @@ Barre de recherche
         content: "\f002";
         font-family: "Font Awesome 5 Free";
         font-weight: 900;
-<<<<<<< HEAD
-        font-size: 1.2rem;
-=======
->>>>>>> loupe
         color: rgb(250, 249, 249);
         width: 60px;
         height: 60px;
@@ -414,8 +410,6 @@ Media queries Hébergements
         padding: 40px 0 40px 80px;
     }
 
-<<<<<<< HEAD
-=======
     .infos-diapos-heberg h3
     {
         font-size: 1.5rem;
@@ -431,17 +425,12 @@ Media queries Hébergements
         font-size: 1.2rem;
     }
     
->>>>>>> loupe
     a .imgheberg
     {
         width: 50vw;
         height: 15vw;
         max-width: 445px;
-<<<<<<< HEAD
-        max-height: 200px;
-=======
         max-height: none;
->>>>>>> loupe
     }
     
     .hebergements
@@ -481,16 +470,9 @@ Media queries Hébergements
 
     a .imgheberg
     {
-<<<<<<< HEAD
-        width: 100%;
-        max-height: 250px;
-        min-width: 445px;
-
-=======
         width: 680px;
         height: 15vw;
         max-height: none;
->>>>>>> loupe
     }
 
     #container-diapos-hebergements
@@ -507,44 +489,27 @@ Media queries Hébergements
     .infos-diapos-heberg h3
     {
         font-size: 1.5rem;
-<<<<<<< HEAD
-        margin: 10px 0 0 15px;
-=======
         margin: 10px;
->>>>>>> loupe
         font-weight: 900;
     }
 
     .infos-diapos-heberg p
     {
         font-size: 1.2rem;
-<<<<<<< HEAD
-        margin: 0 0 0 15px;
-=======
         margin: 10px;
->>>>>>> loupe
     }
 
     .notations
     {
-<<<<<<< HEAD
-        font-size: 1.5rem;
-        margin: 15px 0 20px 15px;
-=======
         font-size: 1.2rem;
         margin: 20px 0 0px 10px;
->>>>>>> loupe
     }
     
 }
 
     /*Desktop pc portable*/
 /*tablettes paysage (landscape)*/
-<<<<<<< HEAD
-@media all and (min-width: 1024px) and (max-width: 1433px) 
-=======
 @media all and (min-width: 1430px) and (max-width: 1858px) 
->>>>>>> loupe
 {
     .body
     {
@@ -569,15 +534,9 @@ Media queries Hébergements
     
     .hebergements
     {
-<<<<<<< HEAD
-        width: auto;
-        margin: 0px 0 30px 25px;
-        padding: 0px;
-=======
         max-width: none;
         margin: 0 40px 0 40px;
         padding-bottom: 60px;
->>>>>>> loupe
     }
     
     .infos-diapos-heberg
@@ -618,10 +577,6 @@ Media queries Hébergements
     .body
     {
         width: 100%;
-<<<<<<< HEAD
-        max-height: 450px;
-=======
->>>>>>> loupe
     }
     
     #section-hebergements
@@ -662,11 +617,7 @@ Media queries Hébergements
 }
 
 /*tablettes portrait*/
-<<<<<<< HEAD
-@media all and (min-width: 768px) and (max-width: 1024px) 
-=======
 @media all and (min-width: 768px) and (max-width: 1260px) 
->>>>>>> loupe
 {
     .body
     {
@@ -675,13 +626,8 @@ Media queries Hébergements
 
     #section-hebergements
     {
-<<<<<<< HEAD
-        width: auto;
-        margin: 50px 40px 0px 50px;
-=======
         width: 90%;
         margin: 50px 40px 0px 20px;
->>>>>>> loupe
         padding: 60px 20px 35px 20px;
     }
 
@@ -810,14 +756,9 @@ Media queries Hébergements
 
     a .imgheberg
     {
-<<<<<<< HEAD
-        width: 100%;
-        max-height: 450px;
-=======
         width: 89vw;
         height: 60vw;
         max-height: none;
->>>>>>> loupe
     }
 
     .Afficher_plus
@@ -844,11 +785,7 @@ Media queries Les plus populaires
         font-size: 1.5rem;
     }
 
-<<<<<<< HEAD
-    #section-lespluspopulaires a 
-=======
     #section-lespluspopulaires a
->>>>>>> loupe
     {
         display: inline-block;
     }
@@ -878,11 +815,7 @@ Media queries Les plus populaires
     
     #container-diapos-lespluspopulaires .imgpops 
     {
-<<<<<<< HEAD
-        width: 100%;
-=======
         width: 26vw;
->>>>>>> loupe
         max-height: 250px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
@@ -923,19 +856,11 @@ Media queries Les plus populaires
         margin-left: 60px;
     }
 
-<<<<<<< HEAD
-    #section-lespluspopulaires a 
-    {
-        display: inline-block;
-    }
-
-=======
     #section-lespluspopulaires a
     {
         display: inline-block;
     }
     
->>>>>>> loupe
     .iconpop
     {
         padding: 10px 0 0 60%;
@@ -958,17 +883,10 @@ Media queries Les plus populaires
         padding: 5px 5px 5px 5px;
         box-shadow: 5px 5px 10px #cecdcd, -5px -5px 10px #cfcece;
     }
-<<<<<<< HEAD
-    
-    #container-diapos-lespluspopulaires .imgpops 
-    {
-        width: 100%;
-=======
 
     #container-diapos-lespluspopulaires .imgpops 
     {
         width: 25vw;
->>>>>>> loupe
         max-height: 250px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
@@ -1192,11 +1110,7 @@ Media queries Les plus populaires
     {
         width: auto;
         margin: 20px 5px 0px 5px;
-<<<<<<< HEAD
-        padding: 40px 10px 40px 10px; 
-=======
         padding: 40px 10px 40px 10px;
->>>>>>> loupe
     }
 
     #section-lespluspopulaires .titre-pops h2
@@ -1287,9 +1201,6 @@ Media queries section activités
     
     #section-activites
     {
-<<<<<<< HEAD
-        width: 92%;
-=======
         max-width: 100%;
         margin: 0 60px 0 60px;
     }   
@@ -1306,7 +1217,6 @@ Media queries section activités
     {
         max-width: 100%;
         margin: 0 60px 0 60px;
->>>>>>> loupe
     }   
 }
 
