@@ -515,7 +515,7 @@ Media queries Hébergements
     
     #section-hebergements
     {
-        width: 90%;
+        width: 92%;
         margin: 50px 60px 0 60px;
     }
 
@@ -666,7 +666,7 @@ Media queries Hébergements
     }
 }
 
-@media all and (min-width: 1024px) and (max-width: 768px) 
+@media all and (min-width: 568px) and (max-width: 768px) 
 {
     .body
     {
