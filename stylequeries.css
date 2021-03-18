@@ -1141,6 +1141,12 @@ Media queries Les plus populaires
         padding: 5px 0px 5px 5px;
     }
 
+    #container-diapos-lespluspopulaires .imgpops
+    {
+        width: auto;
+        min-width: 40%;
+    }
+
     .informations h3
     {
         font-weight: bold;
