@@ -1141,12 +1141,6 @@ Media queries Les plus populaires
         padding: 5px 0px 5px 5px;
     }
 
-    #container-diapos-lespluspopulaires .imgpops
-    {
-        max-height: none;
-        object-fit: cover;
-    }
-
     .informations h3
     {
         font-weight: bold;
@@ -1173,8 +1167,8 @@ Media queries Les plus populaires
 
     .notpop
     {
-        margin-top: 10px;
-        font-size: 1rem;
+        margin-top: 0px;
+        font-size: 0.80rem;
     }
 }
 
